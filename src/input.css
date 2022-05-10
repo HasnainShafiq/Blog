@@ -49,28 +49,53 @@ table {
 	border-spacing: 0;
 }
 
+/* 
+------
+TABLE OF CONTENTS: 
+
+- CSS RESET
+- STYLES FOR INDEX.HTML
+    - :root
+    - body
+    - nav and nav links
+    - main
+    - hero section
+    - featured articles section
+    - card styles
+    - footer
+
+- STYLES FOR ALL-ARTICLES.HTML
+    - page header
+    - all articles section
+
+- MEDIA QUERIES
+------
+
+*/
+
+
+/* --- ROOT --- */
+
 :root {
     font-size: 10px;
     box-sizing: border-box;
     --background-colour: #eaeff1;
 }
 
+/* --- BODY --- */
+
 body {
     background-color: var(--background-colour);
     font-family: "Raleway", sans-serif;
 }
+
+/* --- NAV & NAV LINKS --- */
 
 nav {
     display: grid;
     grid-template-columns: 3;
     align-items: center;
     padding: 3em 0;
-}
-
-.nav-brand {
-    grid-column: 1 / 1;
-    justify-self: center;
-    font-size: 2rem;
 }
 
 .nav-links {
@@ -84,13 +109,17 @@ nav {
     list-style: none;
 }
 
-a {
+.nav-link {
     margin: 0 1rem;
     letter-spacing: 1px;
     font-size: 1.6rem;
-    text-decoration: none;
-    color: black;
 }
+a {
+    color: #062331;
+    text-decoration: none;
+}
+
+/* --- MAIN --- */
 
 main {
     display: flex;
@@ -102,6 +131,7 @@ main {
     width: 100%;
 }
 
+/* --- HERO SECTION & BUTTONS & TEXT --- */
 
 .hero {
     position: relative;
@@ -141,7 +171,7 @@ main {
 .hero-text-container>p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
-    color: rgb(44, 42, 42);
+    color: #2c2a2a;
     line-height: 1.7;
     max-width: 60ch;
     margin-bottom: 1em;
@@ -156,22 +186,16 @@ main {
 }
 
 button {
-    background-color: #d7d1d0;
-    padding: 1em 2em;
-    border: 1px solid #463835;
+    background-color: #5E97B2;
+    padding: 1em 2.5em;
+    border-style: none;
     border-radius: 2em;
     font-size: 1.4rem;
     font-family: 'Poppins', sans-serif;
-    color: #463835;
+    color: #062331;
 }
 
-
-.card > img {
-    width: 100%;
-    border-radius: .9em;
-    max-height: 40rem;
-    object-fit: cover;
-}
+/* --- FEATURED ARTICLES SECTION --- */
 
 .featured-articles-container {
     display: flex;
@@ -190,12 +214,16 @@ button {
 
 .featured-articles-headings>h1 {
     font-size: 2.5em;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: .2em;
 }
 
 .featured-articles-headings > h4 {
     font-size: 2rem;
 }
+
+/* --- CARD STYLES --- */
 
 .all-cards{
     display: flex;
@@ -224,20 +252,23 @@ button {
     padding: 2em 1.5em;
 }
 
+.card > img {
+    width: 100%;
+    border-radius: .9em;
+    max-height: 40rem;
+    object-fit: cover;
+}
 
 
-/* Style div elements that have class equal to tag */
 .tag {
     padding: 4px 8px;
     border: 1px solid #3b4d5f;
-
     border-radius: 50px;
     font-size: 12px;
     font-weight: 600;
     color: #788697;
 }
 
-/* Style div elements that have class equal to name */
 .card-title {
     font-size: 2.4rem;
     font-weight: 600;
@@ -245,13 +276,16 @@ button {
     line-height: 1.5;
 }
 
-/* Style p element */
+
 .card-details > p {
     font-size: 1.4rem;
     color: #383e45;
     line-height: 1.75;
     margin-bottom: 1em;
 }
+
+
+/* 'read more' link at bottom of card */
 
 .card-details > span:last-of-type {
     color: #5b4844;
@@ -264,7 +298,7 @@ button {
     padding: 1.6rem .8rem .8rem .8rem;
 }
 
-
+/* --- FOOTER --- */
 
 footer {
     display: flex;
@@ -284,6 +318,8 @@ p{
     font-family: 'Poppins', sans-serif;
 }
 
+/* --- SMALL SCREENS STYLES --- */
+
 @media only screen and (min-width: 550px) {
     .hero-buttons {
         display: none;
@@ -301,11 +337,23 @@ p{
     }
 }
 
+/* --- MIN-WIDTH:660px STYLES  --- */
+
 @media only screen and (min-width: 660px) {
     .hero-text-container>h1 {
         font-size: 5em;
     }
+
+    .hero-text-container>p {
+        font-size: 16px;
+    }
+
+    .card-details > p, .card-details > span:last-of-type {
+        font-size: 16px
+    }
 }
+
+/* --- MIN-WIDTH:850px STYLES  --- */
 
 @media only screen and (min-width: 850px) {
     .hero-text-container>p {
@@ -315,7 +363,13 @@ p{
     .card-details > p, .card-details > span:last-of-type {
         font-size: 1.6rem;
     }
+
+    .nav-link {
+        font-size: 1.8rem;
+    }
 }
+
+/* --- MIN-WIDTH:1200px STYLES  --- */
 
 @media only screen and (min-width: 1200px) {
 
@@ -339,6 +393,7 @@ p{
         align-content: center;
         grid-column: 1 / 4;
         padding: 3em 0;
+        margin: 0 2em;
         margin-bottom: 2em;
     }
 
@@ -348,7 +403,7 @@ p{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        align-items: flex-start;
+        align-items: center;
         max-width: 95%;
         font-size: 5rem;
         margin: 0 auto;
@@ -365,8 +420,11 @@ p{
     }
 
     .hero-text-container>h1 {
-        font-size: 1.25em;
+        font-size: 1.5em;
         justify-self: flex-start;
+        font-weight: 600;
+        color: #272c31;
+        font-family: 'Poppins', sans-serif;
     }
 
     .hero-text-container>p {
@@ -382,9 +440,6 @@ p{
         gap: 0;
     }
 
-    .hero-buttons > button:nth-of-type(2) {
-        margin: 0 .5em;
-    }
 
     .featured-articles-container {
         grid-column: 1 / span 3;
@@ -423,5 +478,14 @@ p{
         border-radius: .9em;
         max-height: 20rem;
         object-fit: cover;
+    }
+}
+
+/* --- MIN-WIDTH:1462px STYLES  --- */
+
+@media only screen and (min-width: 1462px) {
+    .hero-text-container > h1 {
+        padding: .5em 1em;
+        margin-bottom: 0;
     }
 }
