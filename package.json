@@ -18,7 +18,7 @@
     "url": "https://github.com/Uncreative-creativity/Blog/issues"
   },
   "homepage": "https://github.com/Uncreative-creativity/Blog#readme",
-  "dependencies": {
+  "devDependencies": {
     "@11ty/eleventy": "^1.0.1"
   }
 }
