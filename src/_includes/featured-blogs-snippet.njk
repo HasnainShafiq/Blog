@@ -1,7 +1,7 @@
  <li class="blog">
             <div class="card-container">
                 <div class="card">
-                    <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" srcset="">
+                    <img loading="lazy" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" srcset="">
 
                     <div class="card-details">
                         <p class = "meta"> by <span>{{ post.data.author }}</span> on <span>{{ post.data.date | postDate }}</span>

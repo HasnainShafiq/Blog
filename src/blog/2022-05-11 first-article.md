@@ -3,7 +3,7 @@ title: 'Building My Blog: Working with Eleventy and Netlify'
 author: Hasnain Shafiq
 date: 2022-05-11
 tags: ["posts", "featured"]
-image: /assets/img/screenshot.png
+image: /assets/img/11ty.jpg
 imageAlt: HTML snippet of home page
 description: A short blog about my experience building this website using Eleventy and Netlify. I talk about the ups and downs, what went well, and what I can improve on for future projects.
 ---
