@@ -250,6 +250,10 @@ h1 {
     margin: 0 0 2em;
 }
 
+.blog{
+    width: 100%;
+}
+
 .card {
     padding: 0;
 }
@@ -346,7 +350,7 @@ footer>p {
     }
 
     img{
-        max-height: 300px;
+        max-height: 220px;
     }
 }
 
@@ -361,7 +365,7 @@ footer>p {
         justify-content: center;
         margin: 0;
     }
-    
+
 
     .nav-link {
         margin: 0 .5rem;
@@ -399,7 +403,7 @@ footer>p {
         grid-column: 1 / 4;
         display: grid;
         grid-template-columns: subgrid;
-        padding: 2em 0;
+        padding: 2em 2em;
     }
 
     .card-container {

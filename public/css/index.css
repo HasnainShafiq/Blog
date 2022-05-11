@@ -227,12 +227,18 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+.blog{
+    width: 100%;
 }
 
 .card-container {
     justify-self: center;
-    margin: 2em 1em;
+    align-self: center;
+    margin: 2em auto;
     max-width: 850px;
 }
 
@@ -486,18 +492,17 @@ p{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column: 1 / 4;
-        column-gap: 3em;
     }
 
     .card-container {
         grid-column: 1 / 2;
         justify-self: center;
         padding: 0;
-        margin: 0 1em;
+        margin: 0 1.5em;
     }
 
     .card{
-        padding: 3em;
+        padding: 2em;
         background-color: #ccd3db;
     }
 
