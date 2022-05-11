@@ -347,6 +347,14 @@ main {
         padding: 6em 1em;
     }
 
+    .article-body ul {
+        list-style: none;
+    }
+
+    .article-body h4 {
+        font-size: 16px;
+    }
+
     .img-container {
         padding: 3em 0;
         max-width: 800px;
