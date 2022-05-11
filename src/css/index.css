@@ -501,6 +501,13 @@ p{
         background-color: #ccd3db;
     }
 
+    .card-details{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 400px;
+    }
+
     .card > img {
         width: 100%;
         border-radius: .9em;
