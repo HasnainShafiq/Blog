@@ -233,7 +233,7 @@ main {
 @media only screen and (min-width: 500px) {
 
     img{
-        max-width: 400px;
+        max-width: 350px;
     }
 
 }
@@ -254,7 +254,7 @@ main {
 @media only screen and (min-width: 600px) {
 
     img{
-        max-width: 500px;
+        max-width: 400px;
     }
 }
 
@@ -283,6 +283,10 @@ main {
 
     h4{
         max-width: 50ch;
+    }
+
+    img{
+        max-width: 450px;
     }
 
 }
