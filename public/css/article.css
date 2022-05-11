@@ -347,12 +347,13 @@ main {
         padding: 6em 1em;
     }
 
-    .article-body ul {
+    .article-container li {
+        font-size: 16px;
         list-style: none;
     }
 
-    .article-body h4 {
-        font-size: 16px;
+    .article-container h4 {
+        font-size: 18px;
     }
 
     .img-container {
