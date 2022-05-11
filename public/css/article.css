@@ -155,10 +155,6 @@ footer > p {
     margin: 0 1.5em;
 }
 
-p{
-    font-family: 'Poppins', sans-serif;
-}
-
 .article-container {
     padding: 3em 1em;
     position: relative;
@@ -171,7 +167,8 @@ p{
     max-width: 900px;
 }
 
-p{
+p, figcaption {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
     max-width: 70ch;
     padding: 0 2em;
@@ -180,8 +177,12 @@ p{
     align-self: center;
 }
 
+figcaption{
+    padding: 0;
+}
+
 .img-container {
-    padding: 3em 1em;
+    padding: 3em;
 }
 
 img{
@@ -192,6 +193,9 @@ img{
 }
 
 .article-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1em 3em 4em;
 }
 
@@ -204,6 +208,7 @@ h1{
 
 h4{
     align-self: center;
+    justify-self: center;
     font-size: 1.4rem;
     max-width: 65ch;
     line-height: 1.5;
@@ -216,6 +221,20 @@ main {
     align-items: center;
 }
 
+@media only screen and (min-width: 500px) {
+
+    img{
+        max-width: 400px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    img{
+        max-width: 500px;
+    }
+}
+
 @media only screen and (min-width: 580px) {
 
     h1 {
@@ -224,6 +243,10 @@ main {
 }
 
 @media only screen and (min-width: 670px) {
+
+    h1{
+        font-size: 40px;
+    }
 
     p {
         max-width: 60ch;
@@ -251,7 +274,7 @@ main {
         max-width: 65ch;
     }
 
-    p{
+    p, figcaption {
         font-size: 1.6rem;
         line-height: 1.75;
     }
@@ -279,7 +302,7 @@ main {
     }
 
     img{
-        max-width: 100%;
+        max-width: 550px;
         object-fit: contain;
         height: auto;
         align-self: center;
