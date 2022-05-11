@@ -163,6 +163,7 @@ TABLE OF CONTENTS:
 body {
     background-color: var(--background-colour);
     font-family: "Raleway", sans-serif;
+    overflow-x: hidden;
 }
 
 /* --- NAV --- */
