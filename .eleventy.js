@@ -1,4 +1,5 @@
 const { DateTime } = require('luxon')
+const yaml = require("js-yaml");
 
 module.exports = function(eleventyConfig) {
 
