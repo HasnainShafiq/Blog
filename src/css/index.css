@@ -76,6 +76,7 @@ TABLE OF CONTENTS:
     font-size: 10px;
     box-sizing: border-box;
     --background-colour: #eaeff1;
+    scroll-behavior: smooth;
 }
 
 /* --- BODY --- */
@@ -483,6 +484,7 @@ p{
 
     .all-cards{
         display: grid;
+        grid-template-columns: repeat(3, 1fr);
         grid-column: 1 / 4;
         column-gap: 3em;
     }
