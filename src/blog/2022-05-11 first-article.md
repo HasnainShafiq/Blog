@@ -1,11 +1,11 @@
 ---
-title: My First Article
+title: 'Building My Blog: Working with Eleventy and Netlify' 
 author: Hasnain Shafiq
 date: 2022-05-11
 tags: ["posts", "featured"]
 image: /assets/img/screenshot.png
 imageAlt: HTML snippet of home page
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec turpis sed dolor luctus mattis. Nullam lacus turpis, aliquet id arcu imperdiet, porttitor aliquet odio. Nullam sed nisl venenatis, cursus orci sed, ultricies tortor. Vestibulum mi enim, aliquet vitae egestas sed, finibus quis velit. Maecenas lobortis aliquet justo vitae malesuada.
+description: A short blog about my experience building this website using Eleventy and Netlify. I talk about the ups and downs, what went well, and what I can improve on for future projects.
 ---
 
 
