@@ -256,13 +256,6 @@ main {
 }
 
 
-@media only screen and (min-width: 850px) {
-
-    .nav-link {
-        font-size: 1.8rem;
-    }
-}
-
 @media only screen and (min-width: 900px) {
 
     h1{

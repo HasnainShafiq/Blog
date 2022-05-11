@@ -1,8 +1,7 @@
 ---
-title: My First Article
+title: My Fourth Article
 author: Hasnain Shafiq
-date: 2022-05-11
-tags: ["posts", "featured"]
+date: 2022-05-13
 image: /assets/img/screenshot.png
 imageAlt: HTML snippet of home page
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec turpis sed dolor luctus mattis. Nullam lacus turpis, aliquet id arcu imperdiet, porttitor aliquet odio. Nullam sed nisl venenatis, cursus orci sed, ultricies tortor. Vestibulum mi enim, aliquet vitae egestas sed, finibus quis velit. Maecenas lobortis aliquet justo vitae malesuada.
