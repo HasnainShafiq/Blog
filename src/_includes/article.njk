@@ -1,0 +1,24 @@
+---
+layout: 'article-base.njk'
+---
+
+
+        <div class="article-container">
+            <div class="article-title">
+                <h1>{{ title }}</h1>
+                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident sit iure minima delectus aperiam
+                    voluptatibus cum fugiat magni ex nisi assumenda totam id dolore, odit inventore quas vitae magnam
+                    error?</h4>
+            </div>
+
+            <figure class="img-container">
+                <img src="{{ image }}" alt="{{ imageAlt }}"
+                    srcset="">
+                <figcaption>
+                    {{ imageAlt }}
+                </figcaption>
+            </figure>
+
+           {{ content | safe }}
+
+        </div>

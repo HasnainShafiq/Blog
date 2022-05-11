@@ -197,6 +197,7 @@ button {
     display: flex;
     flex-direction: column;
     padding: 1em 1em;
+    background-color: #e3e9eb;
 }
 
 .featured-articles-headings {
@@ -231,7 +232,7 @@ button {
 .card-container {
     justify-self: center;
     margin: 2em 1em;
-    max-width: 900px;
+    max-width: 850px;
 }
 
 .card-container:nth-of-type(2) {
@@ -244,14 +245,14 @@ button {
 
 .card {
     padding: .8rem;
-    border-radius: 1.2rem;
+    border-radius: 1rem;
     padding: 2em 1.5em;
 }
 
 .card > img {
     width: 100%;
     border-radius: .9em;
-    max-height: 40rem;
+    height: 150px;
     object-fit: cover;
 }
 
@@ -333,9 +334,29 @@ p{
     }
 }
 
+@media only screen and (min-width: 500px) {
+
+    .card > img{
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .card > img{
+        height: 300px;
+    }
+}
+
+
 /* --- MIN-WIDTH:660px STYLES  --- */
 
 @media only screen and (min-width: 660px) {
+
+    .card-container{
+        padding: 0 5em;
+    }
+
     .hero-text-container>h1 {
         font-size: 5em;
     }
@@ -352,6 +373,12 @@ p{
 /* --- MIN-WIDTH:850px STYLES  --- */
 
 @media only screen and (min-width: 850px) {
+
+    .card-container{
+        padding: 0 7em;
+    }
+
+
     .hero-text-container>p {
         font-size: 18px;
     }
@@ -457,22 +484,25 @@ p{
     .all-cards{
         display: grid;
         grid-column: 1 / 4;
+        column-gap: 3em;
     }
 
     .card-container {
         grid-column: 1 / 2;
         justify-self: center;
-        margin: 2em;
+        padding: 0;
+        margin: 0 1em;
     }
 
     .card{
-        background-color: #e3e9eb;
+        padding: 3em;
+        background-color: #ccd3db;
     }
 
     .card > img {
         width: 100%;
         border-radius: .9em;
-        max-height: 20rem;
+        height: 350px;
         object-fit: cover;
     }
 }
