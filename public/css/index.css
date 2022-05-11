@@ -183,13 +183,16 @@ main {
 }
 
 button {
-    background-color: #5E97B2;
+    background-color: #DC5844;
     padding: 1em 2.5em;
     border-style: none;
     border-radius: 2em;
     font-size: 1.4rem;
     font-family: 'Poppins', sans-serif;
-    color: #062331;
+}
+
+button a {
+    color: #eaeff1;
 }
 
 /* --- FEATURED ARTICLES SECTION --- */
@@ -448,8 +451,7 @@ p{
         display: block;
         grid-column: 2;
         object-fit: contain;
-        max-width: 500px;
-        height: auto;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -505,9 +507,10 @@ p{
         margin: 0 1.5em;
     }
 
+
     .card{
         padding: 2em;
-        background-color: #ccd3db;
+        background-color: #eaeff1;
     }
 
     .card-details{
