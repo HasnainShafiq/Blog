@@ -181,7 +181,7 @@ footer > p {
     max-width: 900px;
 }
 
-p, figcaption {
+p, figcaption, .article-container li, .article-container h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
     max-width: 70ch;
@@ -189,6 +189,10 @@ p, figcaption {
     line-height: 1.5;
     margin: 1em 0;
     align-self: center;
+}
+
+.article-container li {
+    list-style: none;
 }
 
 figcaption{
@@ -264,11 +268,11 @@ main {
         font-size: 40px;
     }
 
-    h4, p{
+    h4, p, .article-container li{
         font-size: 16px;
     }
 
-    p {
+    p, .article-container li {
         max-width: 60ch;
         line-height: 1.75;
     }
@@ -313,7 +317,7 @@ main {
         max-width: 65ch;
     }
 
-    p, figcaption {
+    p, figcaption, .article-container li {
         font-size: 1.6rem;
         line-height: 1.75;
     }
@@ -345,15 +349,6 @@ main {
 
     .article-container {
         padding: 6em 1em;
-    }
-
-    .article-container li {
-        font-size: 16px;
-        list-style: none;
-    }
-
-    .article-container h4 {
-        font-size: 18px;
     }
 
     .img-container {
