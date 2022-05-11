@@ -397,6 +397,10 @@ p{
     .nav-link {
         font-size: 1.8rem;
     }
+
+    .blog{
+        max-width: 800px;
+    }
 }
 
 /* --- MIN-WIDTH:1200px STYLES  --- */
