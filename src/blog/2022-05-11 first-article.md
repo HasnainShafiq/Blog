@@ -1,8 +1,8 @@
 ---
 title: "Building My Blog: A Reflective Account"
 description: A reflection on my experience of building this website using
-  Eleventy and Netlify. I talk about the ups and downs, what went well, and what
-  I can improve on for future projects.
+Eleventy and Netlify. I talk about the ups and downs, what went well, and what
+I can improve on for future projects.
 author: Hasnain Shafiq
 date: 2022-05-11T22:36:02.478Z
 tags:

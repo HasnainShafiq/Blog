@@ -148,9 +148,10 @@ h1, h4{
 h1{
     font-size: 20px;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.25;
     max-width: 70ch;
     text-align: center;
+    color: #062331;
 }
 
 footer {
@@ -189,6 +190,11 @@ p, figcaption, .article-body ul, .article-body ol, .article-body h4 {
     margin: 1em 0;
     align-self: flex-start;
 }
+
+p{
+    margin: 1em auto;
+}
+
 .article-body {
     max-width: 90%;
     display: flex;
@@ -370,12 +376,12 @@ main {
     }
 
     .article-title{
-        max-width: 810px;
+        max-width: 650px;
     }
 
     h1 {
         padding: 0;
-        font-size: 50px;
+        font-size: 40px;
     }
 
     h4{
