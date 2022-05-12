@@ -1,5 +1,5 @@
 ---
-title: "Building My Blog: Working with Eleventy and Netlify"
+title: "Building My Blog: A Reflective Account"
 description: A short blog about my experience building this website using
   Eleventy and Netlify. I talk about the ups and downs, what went well, and what
   I can improve on for future projects.
