@@ -144,12 +144,12 @@ h1, h4{
     line-height: 1.5;
     color: #454849;
     align-self: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1{
     font-size: 20px;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
     line-height: 1;
     max-width: 70ch;
     text-align: center;
@@ -157,7 +157,9 @@ h1{
 
 footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 10rem;
     background-color: #e3e9eb;
     margin-bottom: 0;
@@ -181,22 +183,33 @@ footer > p {
     max-width: 900px;
 }
 
-p, figcaption, .article-container li, .article-container h4 {
+p, figcaption, .article-body ul, .article-body ol, .article-body h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
     max-width: 70ch;
-    padding: 0 2em;
-    line-height: 1.5;
+    line-height: 1.75;
     margin: 1em 0;
-    align-self: center;
-}
-
-.article-container li, .article-container h4 {
     align-self: flex-start;
+    list-style: none;
+}
+.article-body {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-.article-container li {
-    list-style: none;
+.article-body h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+    padding: .5em 0;
+}
+
+.article-body ul, .article-body ol {
+    display: flex;
+    flex-direction: column;
 }
 
 figcaption{
@@ -218,7 +231,8 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1em 3em 4em;
+    max-width: 90%;
+    padding: 1em 0 4em;
 }
 
 
@@ -234,11 +248,19 @@ main {
         font-size: 22px;
     }
 
+    h1, h4 {
+        max-width: 45ch;
+    }
+
 }
 
 
 
 @media only screen and (min-width: 500px) {
+
+    h1{
+        font-size: 24px;
+    }
 
     img{
         max-width: 350px;
@@ -254,7 +276,11 @@ main {
     }
 
     h4{
-        max-width: 45ch;
+        max-width: 50ch;
+    }
+
+    .article-body h4 {
+        font-size: 18px;
     }
 }
 
@@ -272,13 +298,20 @@ main {
         font-size: 40px;
     }
 
-    h4, p, .article-container li{
+    h4 {
         font-size: 16px;
     }
 
-    p, .article-container li {
+    .article-body h4{
+        font-size: 20px;
+    }
+    
+    p, .article-body li{
+        font-size: 16px;
+    }
+
+    p, .article-body li, h4 {
         max-width: 60ch;
-        line-height: 1.75;
     }
 
 }
@@ -287,10 +320,6 @@ main {
 
     h1{
         font-size: 42px;
-    }
-
-    h4{
-        max-width: 50ch;
     }
 
     img{
@@ -340,23 +369,29 @@ main {
     }
 
     .article-title{
-        width: 700px;
+        max-width: 810px;
     }
 
     h1 {
         padding: 0;
+        font-size: 50px;
     }
 
     h4{
         max-width: 60ch;
+        font-size: 20px;
     }
 
     .article-container {
         padding: 6em 1em;
     }
 
-    .article-container h4 {
-        font-size: 24px;
+    .article-body h4 {
+        font-size: 26px;
+    }
+
+    p, .article-body li {
+        font-size: 18px;
     }
 
     .img-container {
