@@ -18,12 +18,11 @@ imageAlt: Eleventy Logo
 * What I can improve on
 * Lessons for future
 
-#### Intro
-
 First of, I'd like to welcome you to my personal blog page where I'll be posting updates about my ongoing projects and ideas I have for the future. This site is officially my first completed project which I have uploaded to the Internet. Although I have created mini projects in the past, I haven't showcased them anywhere. Part of the reason why is because I didn't have anywhere to show them off, so I decided I would create a portfolio which would serve a couple purposes:
 
 1. It would allow me to showcase my work
 2. It would allow recruiters or potential employers to take a look at my completed projects as evidence of my abilities.
+
 
 So I decided to crack on with it and build my portfolio. I got around to completing 90% of it, but then realised I didn't actually have any projects to put on it. This then lead to me racking my brain for project ideas when I finally settled on making my own blog. I thought that it would be a piece of cake and I wouldn't learn much from it, but I was very wrong. Let me share with you my experience making my personal blog website and my very first published piece of work.
 
