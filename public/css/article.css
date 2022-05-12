@@ -198,6 +198,7 @@ p, figcaption, .article-body ul, .article-body ol, .article-body h4 {
 
 .article-body {
     max-width: 90%;
+    align-self: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
