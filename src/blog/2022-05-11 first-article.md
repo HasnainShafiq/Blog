@@ -13,10 +13,10 @@ imageAlt: Eleventy Logo
 ---
 #### **Contents**
 
-* Intro
-* What went well
-* What I can improve on
-* Lessons for future
+* **Intro**
+* **What went well**
+* **What I can improve on**
+* **Lessons for future**
 
 First of, I'd like to welcome you to my personal blog page where I'll be posting updates about my ongoing projects and ideas I have for the future. This site is officially my first completed project which I have uploaded to the Internet. Although I have created mini projects in the past, I haven't showcased them anywhere. Part of the reason why is because I didn't have anywhere to show them off, so I decided I would create a portfolio which would serve a couple purposes:
 
