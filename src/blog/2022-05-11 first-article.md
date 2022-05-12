@@ -1,8 +1,8 @@
 ---
 title: "Building My Blog: A Reflective Account"
 description: A reflection on my experience of building this website using
-Eleventy and Netlify. I talk about the ups and downs, what went well, and what
-I can improve on for future projects.
+  Eleventy and Netlify. I talk about the ups and downs, what went well, and what
+  I can improve on for future projects.
 author: Hasnain Shafiq
 date: 2022-05-11T22:36:02.478Z
 tags:
@@ -36,7 +36,7 @@ That's when I decided to work from the ground up, building the HTML and CSS for 
 
 #### **What I can improve on** ⚠️
 
-I genuinely believe my blog is a successful product overall. However, as with anything, it can be improved. For example, it does not have pagination set up yet. That means that I might at one point end up with twenty or thirty blogs lined up on my 'blogs' page. Of course, I will need to look at the Eleventy docs and other resources to get it set up before I end up with a cluttered 'blog' page. 
+I genuinely believe my blog is a successful product overall. However, as with anything, it can be improved. For example, it does not have pagination set up yet. That means that I might at one point end up with twenty or thirty blogs lined up on my 'blogs' page. Of course, I will need to look at the Eleventy docs and other resources to get it set up before I end up with a cluttered 'blogs' page. 
 
 ![Home page ](/assets/img/screencapture-localhost-8080-2022-05-12-03_37_03.png "Home Page. Two of the blog cards in the 'featured articles' section are made to look unavailable.")
 
@@ -62,4 +62,4 @@ Maybe because it was my first big project, but I found that I was spending unhea
 
 #### **Conclusion** 🏁
 
-That about sums up my review of my experience building this blog. Overall, it was a positive learning experience which taught me about my own quirks as a developer. However, in some instances, I could have made better decisions, such as planning out the development roadmap for this blog so that the building process could have gone smoother.
+That about sums up my review of my experience building this blog. Overall, it was a positive learning experience which taught me about my own abilities as a developer. However, in some instances, I could have made better decisions, such as planning out the development roadmap for this blog so that the building process could have gone smoother.
