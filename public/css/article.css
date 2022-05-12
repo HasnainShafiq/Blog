@@ -188,6 +188,11 @@ p, figcaption, .article-body ul, .article-body ol, .article-body h4 {
     max-width: 70ch;
     line-height: 1.75;
     margin: 1em 0;
+    align-self: center;
+}
+
+.article-body ul, .article-body ol {
+    width: 100%;
     align-self: flex-start;
 }
 
@@ -212,6 +217,7 @@ p, figcaption, .article-body ul, .article-body ol, .article-body h4 {
 
 .article-body ul, .article-body ol {
     padding: 0 1em;
+    max-width: 60ch;
 }
 
 .article-body ul li, .article-body ol li {
@@ -247,6 +253,16 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.article-body h4 {
+    align-self: center;
+    width: 100%;
+  }
+
+p {
+    align-self: center;
+    width: 100%;
 }
 
 @media only screen and (min-width: 400px) {
