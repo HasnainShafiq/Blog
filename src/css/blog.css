@@ -253,7 +253,6 @@ h1 {
 
 .blog{
     width: 100%;
-    background-color: #e3e9eb;
 }
 
 .card {
@@ -406,6 +405,7 @@ footer>p {
         display: grid;
         grid-template-columns: subgrid;
         padding: 2em 2em;
+        background-color: #e3e9eb;
     }
 
     .card-container {
