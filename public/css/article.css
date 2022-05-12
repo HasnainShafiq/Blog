@@ -212,6 +212,10 @@ p, figcaption, .article-body ul, .article-body ol, .article-body h4 {
     padding: .5em 0;
 }
 
+.article-body a {
+    color: #DC5844;
+}
+
 .article-body ul, .article-body ol {
     padding: 0 1em;
     max-width: 60ch;
