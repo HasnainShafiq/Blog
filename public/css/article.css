@@ -172,7 +172,7 @@ footer > p {
 }
 
 .article-container {
-    padding: 3em 2em;
+    padding: 3em 3em;
     position: relative;
     grid-column: 2 / 3;
     align-items: center;
@@ -201,7 +201,7 @@ p, figcaption, .article-body ul, .article-body ol, .article-body h4 {
     align-self: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: none;
+    flex-wrap: nowrap;
     align-items: flex-start;
 }
 
@@ -301,6 +301,10 @@ p {
         max-width: 50ch;
     }
 
+    .article-container{
+        padding: 3em 6em;
+    }
+
     .article-body h4 {
         font-size: 18px;
     }
@@ -322,6 +326,10 @@ p {
 
     h4 {
         font-size: 16px;
+    }
+
+    .article-container {
+        padding: 3em 7em;
     }
 
     .article-body h4{
