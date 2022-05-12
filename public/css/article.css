@@ -33,9 +33,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -190,7 +188,6 @@ p, figcaption, .article-body ul, .article-body ol, .article-body h4 {
     line-height: 1.75;
     margin: 1em 0;
     align-self: flex-start;
-    list-style: none;
 }
 .article-body {
     max-width: 90%;
@@ -208,8 +205,12 @@ p, figcaption, .article-body ul, .article-body ol, .article-body h4 {
 }
 
 .article-body ul, .article-body ol {
-    display: flex;
-    flex-direction: column;
+    padding: 0 1em;
+}
+
+.article-body ul li, .article-body ol li {
+    font-weight: 600;
+    color: #062331;
 }
 
 figcaption{
