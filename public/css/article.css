@@ -191,10 +191,6 @@ p, figcaption, .article-body ul, .article-body ol, .article-body h4 {
     align-self: flex-start;
 }
 
-p{
-    margin: 1em auto;
-}
-
 .article-body {
     max-width: 90%;
     display: flex;
