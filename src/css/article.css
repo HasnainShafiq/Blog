@@ -203,6 +203,10 @@ p{
     align-items: flex-start;
 }
 
+#body-img-container{
+    align-self: center;
+}
+
 .article-body h4 {
     font-size: 1.6rem;
     font-weight: 600;
