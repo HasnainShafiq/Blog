@@ -13,8 +13,8 @@ imageAlt: Eleventy Logo
 ---
 #### **Contents**
 
-* **Intro**
-* **What went well**
+* **Intro** 
+* **What went well** **[#](#what-went-well)**
 * **What I can improve on**
 * **Lessons for future**
 * **Conclusion**
@@ -26,7 +26,7 @@ First off, I'd like to welcome you to my personal blog page where I'll be postin
 
 So I decided to crack on with it and build my portfolio. I got around to completing 90% of it, but then realised I didn't actually have any projects to put on it. This then lead to me racking my brain for project ideas when I finally settled on making my own blog. I thought that it would be a piece of cake and I wouldn't learn much from it, but I was very wrong. Let me share with you my experience of making my personal blog website and my very first published piece of work.
 
-#### **What went well** 🎉
+#### **What went well** 🎉  <a href="what-went-well" id="what-went-well"> **#** </a>
 
 I generally suck at acknowleding my strengths and giving myself credit where it's due, so I will try my best to give an honest reflection of what I think I did well. To start off with, I actually saw this project through till the end. There have been times in the past where I have lost interest in a project midway through, never to return to it again. The fact that this is the biggest project I have worked on and I did not lose track is a big accomplishment. To be honest, completing this blog website has given me further incentive to study hard and to practice coding as much as I can. Even though this website has many things which I know can be improved on, I am still really pleased with how it's turned out.
 
@@ -38,11 +38,9 @@ That's when I decided to work from the ground up, building the HTML and CSS for 
 
 I genuinely believe my blog is a successful product overall. However, as with anything, it can be improved. For example, it does not have pagination set up yet. That means that I might at one point end up with twenty or thirty blogs lined up on my 'blogs' page. Of course, I will need to look at the Eleventy docs and other resources to get it set up before I end up with a cluttered 'blogs' page. 
 
-
 <div id="body-img-container">
 <img src="/assets/img/screencapture-localhost-8080-2022-05-12-03_37_03.png" alt="Home Page" title="Two of the blog cards in the 'featured articles' section are made to look unavailable."/>
 </div>
-
 
 Additionally, after having spent a couple days styling my home page, I came to the conclusion that I wasn't happy with the way the blog cards looked within the 'featured articles' section. I want to present the three (or however many I desire) featured articles in the same way as they are displayed on the 'blogs' page. Therefore, I need to think about the styling changes I want to apply and plan how and when I will make them.
 
