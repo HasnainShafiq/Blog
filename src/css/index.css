@@ -189,10 +189,11 @@ button {
     border-radius: 2em;
     font-size: 1.4rem;
     font-family: 'Poppins', sans-serif;
+    transition: color .2s ease;
 }
 
 button:hover{
-    color: #dd5641;
+    color: #a62613;
     cursor: pointer;
 }
 
