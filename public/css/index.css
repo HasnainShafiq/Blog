@@ -191,6 +191,11 @@ button {
     font-family: 'Poppins', sans-serif;
 }
 
+button:hover{
+    color: #dd5641;
+    cursor: pointer;
+}
+
 button a {
     color: #eaeff1;
 }
