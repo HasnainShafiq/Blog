@@ -1,6 +1,10 @@
 backend:
   name: git-gateway
-  branch: v1.0
+  branch: master
+  accept_roles:
+    - admin
+    - editor
+
 
 media_folder: "public/assets/img"
 public_folder: "/assets/img"

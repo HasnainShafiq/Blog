@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/article.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <title>My Second Article (WIP)</title>
+</head>
+<body>
+    <nav>
+    <div class="nav-links">
+        <ul>
+            <li class="nav-link"><a href="/">Home</a></li>
+            <li class="nav-link"><a href="/blog">Blogs</a></li>
+        </ul>
+    </div>
+</nav> 
+    <main>
+    
+
+        <div class="article-container">
+            <div class="article-title">
+                <h1>My Second Article (WIP)</h1>
+                <h4>Blog being written.... Watch this space</h4>
+            </div>
+
+            <figure class="img-container">
+                <img src="/assets/img/wip.jpg" alt="HTML snippet of home page"
+                    srcset="">
+                <figcaption>
+                    HTML snippet of home page
+                </figcaption>
+            </figure>
+            <section class="article-body">
+           <p>Content to follow.</p>
+
+           </section>
+
+        </div>
+
+    </main>
+    <footer>
+    <p>&copy; Hasnain Shafiq 2022. All rights reserved.</p>
+</footer>
+
+
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>
