@@ -193,7 +193,7 @@ button {
 }
 
 button:hover{
-    color: #a62613;
+    background-color: #a62613;
     cursor: pointer;
 }
 
