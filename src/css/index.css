@@ -1,53 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap");
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 /* 
 ------
@@ -83,21 +33,31 @@ TABLE OF CONTENTS:
 
 body {
     background-color: var(--background-colour);
-    font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h4 span, a {
+    font-family: "Poppins", sans-serif;
 }
 
 /* --- NAV & NAV LINKS --- */
 
 nav {
     display: grid;
-    grid-template-columns: 3;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding: 3em 0;
+    /*! justify-content: center; */
+    /*! justify-self: center; */
 }
 
 .nav-links {
     width: 100%;
-    grid-column: 3 / 3;
+    grid-column: 2 / 4;
+    /*! justify-self: center; */
+    /*! justify-items: center; */
+    /*! align-items: center; */
+    /*! align-content: center; */
+    /*! margin: 0 auto; */
 }
 
 .nav-links>ul {
@@ -111,10 +71,8 @@ nav {
     letter-spacing: 1px;
     font-size: 1.6rem;
 }
-a {
-    color: #062331;
-    text-decoration: none;
-}
+
+
 
 /* --- MAIN --- */
 
@@ -126,6 +84,10 @@ main {
     position: relative;
     left: 0;
     width: 100%;
+}
+
+p {
+    color: #383e45;
 }
 
 /* --- HERO SECTION & BUTTONS & TEXT --- */
@@ -158,16 +120,13 @@ main {
 
 
 .hero-text-container>h1 {
-    font-size: 3em;
     line-height: 1.2;
-    font-weight: 600;
     margin-bottom: .5em;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
-.hero-text-container>p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
+p {
     color: #2c2a2a;
     line-height: 1.7;
     max-width: 60ch;
@@ -193,8 +152,8 @@ button {
 }
 
 button:hover{
-    background-color: #a62613;
     cursor: pointer;
+    background-color: #C14C3A;
 }
 
 button a {
@@ -206,7 +165,7 @@ button a {
 .featured-articles-container {
     display: flex;
     flex-direction: column;
-    padding: 1em 1em;
+    padding: 1em 2em;
     background-color: #e3e9eb;
 }
 
@@ -220,14 +179,12 @@ button a {
 }
 
 .featured-articles-headings>h1 {
-    font-size: 2.5em;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
     margin-bottom: .2em;
 }
 
-.featured-articles-headings > h4 {
-    font-size: 2rem;
+h4 {
+    font-size: 1.6rem;
+    font-weight: normal;
 }
 
 /* --- CARD STYLES --- */
@@ -242,6 +199,7 @@ button a {
 
 .blog{
     width: 100%;
+    /*! border-bottom: 2px solid #DC5844; */
 }
 
 .card-container {
@@ -261,9 +219,17 @@ button a {
 
 .card {
     padding: .8rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     padding: 2em 1.5em;
+    border-left: 8px solid #DC5844; 
+    background-color: #eaeff1;
+    box-shadow: rgba(0, 0, 0, .6) 3px 3px 10px;
+    /* transition: box-shadow .2s ease; */
 }
+
+/*  .blog .card:hover {
+        box-shadow: rgba(0, 0, 0, .6) 0px 5px 15px;
+    } */
 
 .card > img {
     width: 100%;
@@ -272,66 +238,33 @@ button a {
     object-fit: cover;
 }
 
-
-.tag {
-    padding: 4px 8px;
-    border: 1px solid #3b4d5f;
-    border-radius: 50px;
-    font-size: 12px;
-    font-weight: 600;
-    color: #788697;
-}
-
 .card-title {
-    font-size: 2.4rem;
-    font-weight: 600;
     margin: 1em 0;
-    line-height: 1.5;
 }
 
 
 .card-details > p {
     font-size: 1.4rem;
-    color: #383e45;
     line-height: 1.75;
     margin-bottom: 1em;
 }
 
 
-/* 'read more' link at bottom of card */
-
-.card-details > span:last-of-type {
-    color: #5b4844;
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-.card-details {
-    /* Add space around the details */
-    padding: 1.6rem .8rem .8rem .8rem;
-}
-
-/* --- FOOTER --- */
-
-footer {
-    display: flex;
-    align-items: center;
-    min-height: 10rem;
-    background-color: #e3e9eb;
-    margin-bottom: 0;
-    padding: 1em;
-}
-
-footer > p {
-    font-size: 1.4rem;
-    margin: 0 1.5em;
-}
-
-p{
-    font-family: 'Poppins', sans-serif;
-}
-
 /* --- SMALL SCREENS STYLES --- */
+
+@media only screen and (min-width: 420px) {
+    .nav-links {
+        grid-column: 3;
+        margin-right: 4em;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+
+    .card > img{
+        height: 200px;
+    }
+}
 
 @media only screen and (min-width: 550px) {
     .hero-buttons {
@@ -350,14 +283,12 @@ p{
     }
 }
 
-@media only screen and (min-width: 500px) {
-
-    .card > img{
-        height: 200px;
-    }
-}
 
 @media only screen and (min-width: 600px) {
+
+    .featured-articles-container{
+        padding: 1em 4em;
+    }
 
     .card > img{
         height: 300px;
@@ -373,12 +304,10 @@ p{
         padding: 0 5em;
     }
 
-    .hero-text-container>h1 {
-        font-size: 5em;
-    }
-
-    .hero-text-container>p {
-        font-size: 16px;
+    
+    .card {
+        border-left: 12px solid #DC5844;
+        border-radius: 2.5rem;
     }
 
     .card-details > p, .card-details > span:last-of-type {
@@ -394,7 +323,6 @@ p{
         padding: 0 7em;
     }
 
-
     .hero-text-container>p {
         font-size: 18px;
     }
@@ -404,11 +332,15 @@ p{
     }
 
     .nav-link {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .blog{
         max-width: 800px;
+    }
+
+    button a {
+        font-size: 16px;
     }
 }
 
@@ -466,13 +398,8 @@ p{
         justify-self: flex-start;
         font-weight: 600;
         color: #272c31;
-        font-family: 'Poppins', sans-serif;
     }
 
-    .hero-text-container>p {
-        line-height: 1.7;
-        max-width: 60ch;
-    }
 
     .hero-buttons {
         grid-column: 1 / 2;
@@ -495,9 +422,12 @@ p{
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 1.6rem;
         margin: 3em 0 2em;
         line-height: 1.5;
+    }
+
+    h4 {
+        font-size: 2rem;
     }
 
     .all-cards{
@@ -515,14 +445,9 @@ p{
 
 
     .card{
-        padding: 2em;
-        background-color: #eaeff1;
-        transition: box-shadow .2s ease;
+        padding: 1em;
     }
 
-    .blog:first-of-type .card:hover {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
 
     .blog:nth-of-type(2) .card, .blog:last-of-type .card{
         filter: brightness(60%);
@@ -555,3 +480,15 @@ p{
         margin-bottom: 0;
     }
 }
+
+@media only screen and (min-width: 1350px) {
+.card{
+    padding: 2em;
+}
+}
+
+@media only screen and (min-width: 1780px) {
+    .card{
+        padding: 3em;
+    }
+    }
