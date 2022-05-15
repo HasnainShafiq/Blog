@@ -71,6 +71,9 @@ html {
     font-size: 10px;
     box-sizing: border-box;
     --background-colour: #eaeff1;
+    --accent-colour: #DC5844;
+    --text-colour: #2c2a2a;
+    --light-text-colour: #cccdcd;
     scroll-behavior: smooth;
 }
 
@@ -124,7 +127,7 @@ a {
 }
 
 a, span {
-    color: #DC5844;
+    color: var(--accent-colour);
     font-weight: 600;
     font-size: 1.4rem;
 }
@@ -142,7 +145,7 @@ main {
 }
 
 p {
-    color: #383e45;
+    color: var(--text-colour);
     font-size: 1.4rem;
     line-height: 1.75;
     margin-bottom: 1em;
@@ -151,18 +154,18 @@ p {
 h1 {
     font-size: 3rem;
     font-weight: 600;
-    color: #DC5844;
+    color: var(--accent-colour);
     line-height: 1.5;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.5;
 }
 
 h2 a {
     font-size: 2.5rem;
-    color: #1e1b1b;
+    color: var(--text-colour);
 }
 
 .card-details {
@@ -176,16 +179,15 @@ footer {
     display: flex;
     align-items: center;
     min-height: 10rem;
-    background-color: #DC5844;
+    background-color: var(--accent-colour);
     margin-top: auto;
     margin-bottom: 0;
     padding: 1em;
 }
 
 footer > p {
-    font-size: 1.4rem;
     margin: 0 1.5em;
-    color: #b8babb;
+    color: var(--background-colour);
 }
 
 
