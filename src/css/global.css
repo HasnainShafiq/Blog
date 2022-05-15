@@ -74,6 +74,7 @@ html {
     --accent-colour: #DC5844;
     --text-colour: #2c2a2a;
     --light-text-colour: #cccdcd;
+    --button-hover-colour: #C14C3A;
     scroll-behavior: smooth;
 }
 
@@ -102,13 +103,20 @@ nav {
 }
 
 .brand {
-    background-color: var(--accent-colour);
     padding: 1rem 1.5rem;
+}
+
+.brand a {
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--accent-colour);
     font-size: 1.6rem;
     font-weight: 600;
-    border-radius: .5rem;
-    font-family: 'Poppins', sans-serif;
     color: var(--background-colour);
+}
+
+.brand a:hover {
+    background-color: var(--button-hover-colour);
 }
 
 .nav-links {
@@ -127,11 +135,16 @@ nav {
     list-style: none;
 }
 
-.nav-link {
+.nav-link a{
     margin: 0 .7rem;
     letter-spacing: 1px;
     font-size: 1.6rem;
 }
+
+.nav-link a:hover {
+    color: var(--button-hover-colour);
+}
+
 a {
     text-decoration: none;
 }
@@ -229,7 +242,7 @@ footer > p {
         font-size: 2.2rem
     }
 
-    .brand {
+    .brand a, .nav-link a{
         font-size: 1.8rem;
     }
 
@@ -277,7 +290,7 @@ footer > p {
         padding: 2em;
     }
 
-    .brand {
+    .brand a, .nav-link a {
         font-size: 2rem;
     }
 
