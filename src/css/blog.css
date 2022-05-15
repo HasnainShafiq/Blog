@@ -231,7 +231,7 @@ img {
         grid-column: 1 / 4;
         display: grid;
         grid-template-columns: 2fr 1fr 2fr;
-        padding: 4em 4em;
+        padding: 1em 4em;
         justify-items: center;
         align-items: center;
         width: 80%;
