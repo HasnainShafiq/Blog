@@ -26,6 +26,9 @@ TABLE OF CONTENTS:
     font-size: 10px;
     box-sizing: border-box;
     --background-colour: #eaeff1;
+    --accent-colour: #DC5844;
+    --text-colour: #2c2a2a;
+    --light-text-colour: #cccdcd;
     scroll-behavior: smooth;
 }
 
@@ -71,26 +74,28 @@ main {
     row-gap: 1em;
 }
 
-h1, h4{
+h1, .article-title h4{
     justify-self: center;
-    max-width: 40ch;
     line-height: 1.5;
     align-self: center;
 }
 
+.article-title h4 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    padding: 2rem 0 0;
+}
+
 h1{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: 600;
     line-height: 1.25;
     max-width: 70ch;
-    text-align: center;
-    color: #062331;
+    text-align: left;
+    color: black;
 }
-
-h4 strong {
-    font-size: 1.8rem;
-}
-
 
 .article-container {
     padding: 3em 3em;
@@ -101,10 +106,10 @@ h4 strong {
     justify-items: center;
     display: flex;
     flex-direction: column;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
-p, figcaption, .article-body ul, .article-body ol, .article-body h4 {
+p, figcaption, .article-body ul, .article-body ol {
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
     max-width: 70ch;
@@ -126,25 +131,21 @@ p, figcaption, .article-body ul, .article-body ol, .article-body h4 {
     align-items: flex-start;
 }
 
-.article-body h4 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin: 0;
-    padding: .5em 0;
-}
-
 .article-body a {
-    color: #DC5844;
+    color: var(--accent-colour);
 }
 
 .article-body ul, .article-body ol {
     padding: 0 1em;
-    max-width: 60ch;
 }
 
 .article-body ul li, .article-body ol li {
     font-weight: 600;
-    color: #062331;
+    color: var(--text-colour);
+}
+
+li::marker {
+    color: var(--accent-colour);
 }
 
 figcaption{
@@ -166,8 +167,8 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 90%;
-    padding: 1em 0 4em;
+    padding: 1rem 1.5rem 4em;
+    max-width: 650px;
 }
 
 
@@ -178,6 +179,7 @@ main {
 }
 
 .article-body h4 {
+    font-size: 1.8rem;
     width: 100%;
   }
 
@@ -185,14 +187,44 @@ p {
     width: 100%;
 }
 
+@media only screen and (min-width: 360px) {
+
+    h1 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    
+    .article-title h4 {
+        max-width: 30ch;
+    }
+}
+
 @media only screen and (min-width: 400px) {
 
-    h1{
-        font-size: 22px;
+    h1 {
+        max-width: 45ch;
+        font-size: 3rem;
     }
 
-    h1, h4 {
-        max-width: 45ch;
+    .article-title h4 {
+        max-width: 32ch;
+    }
+
+    .article-body {
+        padding: 0 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 438px) {
+
+    h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    }
+
+    .article-title h4 {
+        max-width: 37ch;
     }
 
 }
@@ -201,8 +233,21 @@ p {
 
 @media only screen and (min-width: 500px) {
 
+    .article-title {
+        padding: 1rem 2rem 4rem;
+    }
+
+
     h1{
-        font-size: 24px;
+        font-size: 4rem;
+    }
+ 
+    .article-title h4, h4, .article-body a, p, .article-body li {
+        font-size: 1.6rem;
+    }
+
+    .article-body h4 {
+        font-size: 2rem;
     }
 
     #body-img-container {
@@ -218,54 +263,49 @@ p {
 
 @media only screen and (min-width: 580px) {
 
-    h1 {
-        font-size: 30px;
-    }
-
-    h4{
-        max-width: 50ch;
+    
+    .article-title {
+        padding: 1rem 2.5rem 4rem;
     }
 
     .article-container{
         padding: 3em 6em;
     }
 
-    .article-body h4 {
-        font-size: 18px;
-    }
 }
 
 
 @media only screen and (min-width: 600px) {
+
+    .article-title {
+        padding: 1rem 3.5rem 4rem;
+    }
 
     img{
         max-width: 400px;
     }
 }
 
-@media only screen and (min-width: 670px) {
+@media only screen and (min-width: 660px) {
 
-    h1{
-        font-size: 40px;
+
+    .article-title {
+        padding: 1rem 5rem 4rem;
     }
 
     h4 {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .article-container {
         padding: 3em 7em;
     }
 
-    .article-body h4{
-        font-size: 20px;
+    .article-body h4 {
+        font-size: 2rem;
     }
     
-    p, .article-body li{
-        font-size: 16px;
-    }
-
-    p, .article-body li, h4 {
+    p, .article-body li {
         max-width: 60ch;
     }
 
@@ -273,8 +313,8 @@ p {
 
 @media only screen and (min-width: 709px) {
 
-    h1{
-        font-size: 42px;
+    .article-title {
+        padding: 1rem 6rem 4rem;
     }
 
     img{
@@ -285,13 +325,49 @@ p {
 
 @media only screen and (min-width: 740px) {
 
-    h1{
-        padding: 0 1em;
+    
+    .article-title {
+        padding: 1rem 7rem 4rem;
     }
 
 }
 
+@media only screen and (min-width: 800px) {
 
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    .article-title {
+        padding: 1rem 9rem 4rem;
+    }
+   
+    .article-title h4 {
+        max-width: 38ch;
+        padding: 0;
+    }
+
+    .article-title h4, .article-body a, p, .article-body li {
+        font-size: 1.8rem;
+    }
+
+    .article-body h4 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+
+    .article-title {
+        padding: 1rem 9rem 4rem;
+    }
+
+    figcaption, .article-container li {
+        font-size: 1.8rem;
+        line-height: 1.75;
+    }
+
+}
 
 
 @media only screen and (min-width: 900px) {
@@ -300,15 +376,11 @@ p {
         font-size: 50px;
     }
 
-    h4{
+    .article-title h4{
         font-size: 1.6rem;
-        max-width: 65ch;
+        max-width: 47ch;
     }
 
-    p, figcaption, .article-container li {
-        font-size: 1.6rem;
-        line-height: 1.75;
-    }
 }
 
 
@@ -317,36 +389,40 @@ p {
 
     main {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
         position: relative;
         left: 0;
         width: 100%;
     }
 
     .article-title{
+        padding: 1rem 2rem 4rem;
         max-width: 650px;
     }
 
     h1 {
         padding: 0;
-        font-size: 40px;
     }
 
-    h4{
-        max-width: 60ch;
-        font-size: 20px;
+    .article-title h4{
+        font-size: 1.8rem;
+        padding-left: 3rem;
     }
 
     .article-container {
-        padding: 6em 1em;
+        padding: 6em 0;
     }
 
-    .article-body h4 {
-        font-size: 26px;
+    .article-body {
+        padding: 0;
     }
 
-    p, .article-body li {
-        font-size: 18px;
+    .article-body h4, a > strong {
+        font-size: 2.4rem;
+    }
+
+    .article-body li {
+        font-size: 1.8rem;
     }
 
     .img-container {
