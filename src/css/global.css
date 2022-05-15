@@ -94,16 +94,26 @@ h1, h2, h4, span, a, p {
 
 nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 1fr 2fr;
     align-items: center;
-    padding: 3em 0;
-    /*! justify-content: center; */
-    /*! justify-self: center; */
+    padding: 3em 2em;
+    justify-content: center; 
+    justify-items: center;
+}
+
+.brand {
+    background-color: var(--accent-colour);
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--background-colour);
 }
 
 .nav-links {
     width: 100%;
-    grid-column: 2 / 4;
+    grid-column: 3 / 4;
     /*! justify-self: center; */
     /*! justify-items: center; */
     /*! align-items: center; */
@@ -118,7 +128,7 @@ nav {
 }
 
 .nav-link {
-    margin: 0 1rem;
+    margin: 0 .7rem;
     letter-spacing: 1px;
     font-size: 1.6rem;
 }
@@ -154,13 +164,17 @@ p {
 h1 {
     font-size: 3rem;
     font-weight: 600;
-    color: var(--accent-colour);
+    color: var(--text-colour);
     line-height: 1.5;
 }
 
 h2 {
     font-size: 2.5rem;
     line-height: 1.5;
+}
+
+h4 {
+    font-size: 1.6rem;
 }
 
 h2 a {
@@ -194,10 +208,11 @@ footer > p {
 /* --- SMALL SCREENS STYLES --- */
 
 @media only screen and (min-width: 420px) {
-    .nav-links {
-        grid-column: 3;
-        margin-right: 4em;
+    
+    nav {
+        padding: 3em 0;
     }
+
 }
 
 
@@ -212,6 +227,10 @@ footer > p {
 
     h2 {
         font-size: 2.2rem
+    }
+
+    .brand {
+        font-size: 1.8rem;
     }
 
     p, span, a {
@@ -256,6 +275,10 @@ footer > p {
 
     .card{
         padding: 2em;
+    }
+
+    .brand {
+        font-size: 2rem;
     }
 
 }
