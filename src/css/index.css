@@ -30,6 +30,7 @@ TABLE OF CONTENTS:
     --card-colour: #f3f7f9;
     --container-colour: #e3e9eb;
     --button-hover-colour: #C14C3A;
+    --text-colour: #2c2a2a;
     scroll-behavior: smooth;
 }
 
@@ -42,40 +43,6 @@ body {
 h1, h2, h4 span, a {
     font-family: "Poppins", sans-serif;
 }
-
-/* --- NAV & NAV LINKS --- */
-
-nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    padding: 3em 0;
-    /*! justify-content: center; */
-    /*! justify-self: center; */
-}
-
-.nav-links {
-    width: 100%;
-    grid-column: 2 / 4;
-    /*! justify-self: center; */
-    /*! justify-items: center; */
-    /*! align-items: center; */
-    /*! align-content: center; */
-    /*! margin: 0 auto; */
-}
-
-.nav-links>ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.nav-link {
-    margin: 0 1rem;
-    letter-spacing: 1px;
-    font-size: 1.6rem;
-}
-
 
 
 /* --- MAIN --- */
@@ -124,7 +91,6 @@ main {
     margin-bottom: .5em;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    color: var(--accent-colour);
 }
 
 p {
@@ -245,10 +211,7 @@ h4 {
 /* --- SMALL SCREENS STYLES --- */
 
 @media only screen and (min-width: 420px) {
-    .nav-links {
-        grid-column: 3;
-        margin-right: 4em;
-    }
+ 
 }
 
 @media only screen and (min-width: 500px) {
@@ -310,10 +273,6 @@ h4 {
 
     .card-container{
         padding: 0 7em;
-    }
-
-    .nav-link {
-        font-size: 2rem;
     }
 
     .blog{
@@ -427,6 +386,11 @@ h4 {
 
     .card{
         padding: 1em;
+        transition: box-shadow .2s ease;
+    }
+
+    .card:hover{
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
 
     .blog:nth-of-type(2) .card, .blog:last-of-type .card{
