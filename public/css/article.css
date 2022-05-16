@@ -78,14 +78,15 @@ h1, .article-title h4{
     justify-self: center;
     line-height: 1.5;
     align-self: center;
+    padding-top: 0;
 }
 
 .article-title h4 {
     font-size: 1.4rem;
 }
 
-h4 {
-    padding: 2rem 0 0;
+.article-body h4 {
+    padding: 3rem 0 0;
 }
 
 h1{
@@ -98,7 +99,7 @@ h1{
 }
 
 .article-container {
-    padding: 3em 3em;
+    padding: 3rem 1rem;
     position: relative;
     grid-column: 2 / 3;
     align-items: center;
@@ -114,7 +115,6 @@ p, figcaption, .article-body ul, .article-body ol {
     font-size: 1.4rem;
     max-width: 70ch;
     line-height: 1.75;
-    margin: 1em 0;
 }
 
 .article-body ul, .article-body ol {
@@ -136,12 +136,13 @@ p, figcaption, .article-body ul, .article-body ol {
 }
 
 .article-body ul, .article-body ol {
-    padding: 0 1em;
+    padding: 2rem 1em 0;
 }
 
 .article-body ul li, .article-body ol li {
     font-weight: 600;
     color: var(--text-colour);
+    padding: .2rem 0;
 }
 
 li::marker {
@@ -153,6 +154,7 @@ figcaption{
 }
 
 .img-container {
+    align-self: center;
     padding: 3em;
 }
 
@@ -185,6 +187,8 @@ main {
 
 p {
     width: 100%;
+    padding: 1rem 0 0;
+    margin-bottom: 0;
 }
 
 @media only screen and (min-width: 360px) {
@@ -211,7 +215,7 @@ p {
     }
 
     .article-body {
-        padding: 0 1.5rem;
+        padding: 0 1rem;
     }
 
 }
@@ -237,6 +241,10 @@ p {
         padding: 1rem 2rem 4rem;
     }
 
+    .article-body {
+        padding: 0 1.5rem;
+    }
+
 
     h1{
         font-size: 4rem;
@@ -250,8 +258,9 @@ p {
         font-size: 2rem;
     }
 
-    #body-img-container {
+    .body-img-container {
         align-self: center;
+        padding: 1.5rem 0;
     }
 
     img{
@@ -266,10 +275,6 @@ p {
     
     .article-title {
         padding: 1rem 2.5rem 4rem;
-    }
-
-    .article-container{
-        padding: 3em 6em;
     }
 
 }
@@ -297,9 +302,9 @@ p {
         font-size: 1.6rem;
     }
 
-    .article-container {
-        padding: 3em 7em;
-    }
+    /* .article-container {
+        padding: 3rem 1rem;
+    } */
 
     .article-body h4 {
         font-size: 2rem;
@@ -410,7 +415,7 @@ p {
     }
 
     .article-container {
-        padding: 6em 0;
+        padding: 6rem 1rem;
     }
 
     .article-body {

@@ -202,15 +202,21 @@ h2 a {
 
 footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 10rem;
     background-color: var(--accent-colour);
     margin-top: auto;
     margin-bottom: 0;
-    padding: 1em;
+    padding: 1rem 0;
+    row-gap: .5rem;
 }
 
-footer > p {
+footer p, footer a {
+    width: auto;
+    font-weight: normal;
+    align-self: center;
     margin: 0 1.5em;
     color: var(--background-colour);
 }
