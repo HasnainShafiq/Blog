@@ -213,16 +213,31 @@ footer {
     row-gap: .5rem;
 }
 
-footer p, footer a {
+footer p, footer a, footer span {
     width: auto;
     font-weight: normal;
-    align-self: center;
+    align-self: flex-start;
     margin: 0 1.5em;
     color: var(--background-colour);
 }
 
 
+footer span {
+    margin: 0;
+    font-weight: 600;
+}
+
+footer span:hover {
+    text-decoration: underline 3px;
+}
+
 /* --- SMALL SCREENS STYLES --- */
+
+@media only screen and (min-width: 334px) {
+    footer p, footer a, footer span {
+        align-self: center;
+    }
+}
 
 @media only screen and (min-width: 420px) {
     
