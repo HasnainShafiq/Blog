@@ -13,11 +13,14 @@ imageAlt: Eleventy Logo
 ---
 #### **Contents**
 
-* **Intro** 
+* **Intro** **[#](#intro)**
 * **What went well** **[#](#what-went-well)**
-* **What I can improve on**
-* **Lessons for future**
-* **Conclusion**
+* **What I can improve on**  **[#](#what-i-can-improve-on)**
+* **Lessons for future**  **[#](#lessons-for-future)**
+* **Conclusion**  **[#](#conclusion)**
+
+
+#### **Intro** <a href="#intro" id="intro"> **#** </a>
 
 First off, I'd like to welcome you to my personal blog page where I'll be posting updates about my ongoing projects and ideas I have for the future. This site is officially my first completed project which I have uploaded to the Internet. Although I have created mini projects in the past, I haven't showcased them anywhere. Part of the reason why is because I didn't have anywhere to show them off, so I decided that I would create a portfolio which would serve a couple purposes:
 
@@ -26,7 +29,7 @@ First off, I'd like to welcome you to my personal blog page where I'll be postin
 
 So I decided to crack on with it and build my portfolio. I got around to completing 90% of it, but then realised I didn't actually have any projects to put on it. This then lead to me racking my brain for project ideas when I finally settled on making my own blog. I thought that it would be a piece of cake and I wouldn't learn much from it, but I was very wrong. Let me share with you my experience of making my personal blog website and my very first published piece of work.
 
-#### **What went well** 🎉  <a href="what-went-well" id="what-went-well"> **#** </a>
+#### **What went well** 🎉  <a href="#what-went-well" id="what-went-well"> **#** </a>
 
 I generally suck at acknowleding my strengths and giving myself credit where it's due, so I will try my best to give an honest reflection of what I think I did well. To start off with, I actually saw this project through till the end. There have been times in the past where I have lost interest in a project midway through, never to return to it again. The fact that this is the biggest project I have worked on and I did not lose track is a big accomplishment. To be honest, completing this blog website has given me further incentive to study hard and to practice coding as much as I can. Even though this website has many things which I know can be improved on, I am still really pleased with how it's turned out.
 
@@ -34,7 +37,7 @@ I did hit a roadblock at one point when I was struggling to integrate Eleventy i
 
 That's when I decided to work from the ground up, building the HTML and CSS for the blog by myself and styling it the way I wanted. Once that was set up, which took me about three days, I returned to the Eleventy tutorial. This time I made sure to Google any issues I was facing and I reminded myself that it is a learning process. Therefore, despite facing issues as you normally do, I stayed committed and managed to eventually get everything up and running. What you have before you is the product of five days of building the structure of my blog, styling it the way I liked, and integrating it with Eleventy and Netlify CMS, so that I can add new articles to my blog effortlessly.
 
-#### **What I can improve on** ⚠️
+#### **What I can improve on** ⚠️ <a href="#what-i-can-improve-on" id="what-i-can-improve-on"> **#** </a>
 
 I genuinely believe my blog is a successful product overall. However, as with anything, it can be improved. For example, it does not have pagination set up yet. That means that I might at one point end up with twenty or thirty blogs lined up on my 'blogs' page. Of course, I will need to look at the Eleventy docs and other resources to get it set up before I end up with a cluttered 'blogs' page. 
 
@@ -46,7 +49,7 @@ Additionally, after having spent a couple days styling my home page, I came to t
 
 Most importantly, the biggest thing I can improve on is my approach to future projects. After deciding to build this blog, ideally I should have planned every aspect of it carefully. But I didn't, and that definitely set me back in getting this site up and running. I think I was very eager to produce something meaningful and have it published online that I went against my better judgement and skipped the planning stage. This leads me on to the final section of this post.
 
-#### **Lessons for future** 💭
+#### **Lessons for future** 💭<a href="#lessons-for-future" id="lessons-for-future"> **#** </a>
 
 The main lessons I have taken away from this are:
 
@@ -62,6 +65,6 @@ At times, I tried to rush the styling or the Eleventy integration and templating
 
 Maybe because it was my first big project, but I found that I was spending unhealthy amounts of time sat in one spot staring at my laptop screen. It isn't good for the body nor the mind. Therefore, I will try to take breaks during coding sessions at regular intervals so that my body can stretch and move around and my mind can have a break from the stresses (and joys) of coding.
 
-#### **Conclusion** 🏁
+#### **Conclusion** 🏁 <a href="#conclusion" id="conclusion"> **#** </a>
 
 That about sums up my review of my experience building this blog. Overall, it was a positive learning experience which taught me about my own abilities as a developer. However, in some instances, I could have made better decisions, such as planning out the development roadmap for this blog so that the building process could have gone smoother.
