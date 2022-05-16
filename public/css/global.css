@@ -160,8 +160,6 @@ a, span {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-items: center;
     position: relative;
     left: 0;
     width: 100%;
@@ -228,6 +226,11 @@ footer > p {
 
 }
 
+@media only screen and (min-width: 500px) {
+    img {
+        height: 250px;
+    }
+}
 
 
 /* --- MIN-WIDTH:660px STYLES  --- */
@@ -274,8 +277,6 @@ footer > p {
     main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        justify-items: center;
         position: relative;
         left: 0;
         width: 100%;
@@ -293,5 +294,9 @@ footer > p {
     .brand a, .nav-link a {
         font-size: 2rem;
     }
+
+        img {
+            height: 200px;
+        }
 
 }

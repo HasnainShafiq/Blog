@@ -32,6 +32,11 @@ body {
 }
 
 
+main {
+    justify-items: center;
+}
+
+
 /* --- PAGE HEADER --- */
 
 .page-header {
