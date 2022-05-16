@@ -1,13 +1,11 @@
 ---
-title: My Second Article (WIP)
+title: "Update #1"
+description: "A quick update on recent changes to the blog, featuring a splash
+  of colour and a lively personality. "
 author: Hasnain Shafiq
-date: 2022-05-12
 tags: ["posts", "featured", "updates"]
+date: 2022-05-16T14:23:14.792Z
 image: /assets/img/update1.png
-imageAlt: HTML snippet of home page
-description: Blog being written.... Watch this space
+imageAlt: "Update #1"
 ---
-
-
-
-Content to follow.
+#### **Update in progress...**
