@@ -6,7 +6,7 @@ description: A reflection on my experience of building this website using
 author: Hasnain Shafiq
 date: 2022-05-11T22:36:02.478Z
 tags:
-  - posts
+  - post
   - featured
 image: /assets/img/11ty.jpg
 imageAlt: Eleventy Logo

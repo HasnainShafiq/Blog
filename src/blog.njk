@@ -1,6 +1,10 @@
 ---
-title: Blog
-layout: 'blog-base.njk'
+title: Blogs
+layout: '/layouts/blog-base.njk'
+pagination: 
+    data: collections.post
+    size: 1
+    alias: posts
 ---
 
 <section class="page-header">
@@ -9,7 +13,8 @@ layout: 'blog-base.njk'
 </section>
 
 <ul class="all-cards">
-   {%- for post in collections.post | reverse -%}
-       {% include "blog-snippet.njk" %}
-   {%- endfor %}
+    {%- for post in collections.post | reverse -%}
+           {% include "blog-snippet.njk" %}
+        {# <li><a href="{{post.url}}">{{post.data.title}}</a></li> #}
+    {%- endfor -%}
 </ul>
