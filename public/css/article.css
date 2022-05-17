@@ -82,7 +82,7 @@ h1, .article-title h4{
 }
 
 .article-title h4 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .article-body h4 {
@@ -110,9 +110,9 @@ h1{
     max-width: 1000px;
 }
 
-p, figcaption, .article-body ul, .article-body ol {
+p, figcaption, .article-body ul, .article-body ol, .article-body a, .article-body span {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     max-width: 70ch;
     line-height: 1.75;
 }
@@ -129,6 +129,7 @@ p, figcaption, .article-body ul, .article-body ol {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-start;
+    padding: 0 1rem;
 }
 
 .article-body a {
@@ -187,8 +188,12 @@ main {
 
 p {
     width: 100%;
-    padding: 1rem 0 0;
+    padding: 3rem 0 0;
     margin-bottom: 0;
+}
+
+h4 + p, ul + p, ol + p {
+    padding: 1rem 0 0;
 }
 
 @media only screen and (min-width: 360px) {
@@ -199,7 +204,7 @@ p {
     }
     
     .article-title h4 {
-        max-width: 30ch;
+        max-width: 26ch;
     }
 }
 
@@ -211,11 +216,7 @@ p {
     }
 
     .article-title h4 {
-        max-width: 32ch;
-    }
-
-    .article-body {
-        padding: 0 1rem;
+        max-width: 28ch;
     }
 
 }
@@ -228,7 +229,7 @@ p {
     }
 
     .article-title h4 {
-        max-width: 37ch;
+        max-width: 33ch;
     }
 
 }
@@ -252,6 +253,10 @@ p {
  
     .article-title h4, h4, .article-body a, p, .article-body li {
         font-size: 1.6rem;
+    }
+
+    .article-title h4 {
+        max-width: 37ch;
     }
 
     .article-body h4 {
@@ -335,6 +340,14 @@ p {
         padding: 1rem 7rem 4rem;
     }
 
+}
+
+@media only screen and (min-width: 750px) {
+
+    h1 {
+        font-size: 4.5rem;
+    }
+    
 }
 
 @media only screen and (min-width: 800px) {

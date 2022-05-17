@@ -2,7 +2,9 @@
 title: My Third Article (WIP)
 description: Blog being written.... Watch this space
 author: Hasnain Shafiq
-date: 2022-05-19T23:00:00.000Z
+date: 2022-05-20
+tags:
+  - post
 tags:
   - posts
   - featured
