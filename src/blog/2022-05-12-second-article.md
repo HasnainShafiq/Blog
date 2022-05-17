@@ -4,7 +4,7 @@ description: "A quick update on recent changes to the blog, featuring a splash o
 author: Hasnain Shafiq
 tags: ['post','featured', 'updates']
 date: 2022-05-16T14:23:14.792Z
-image: /assets/img/update1.png
+image: /assets/img/update1.jpg
 imageAlt: "Update #1"
 ---
 #### **Update in progress...**
