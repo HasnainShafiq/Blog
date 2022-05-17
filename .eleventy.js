@@ -1,5 +1,6 @@
 const { DateTime } = require('luxon')
 const yaml = require("js-yaml");
+const Image = require('@11ty/eleventy-img');
 
 module.exports = function(eleventyConfig) {
 
@@ -10,7 +11,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("postDate", (dateObj) => {
       return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     })
-    
+
     return {
       dir: {
         input: "src",

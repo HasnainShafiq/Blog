@@ -20,7 +20,8 @@ TABLE OF CONTENTS:
     box-sizing: border-box;
     --background-colour: #eaeff1;
     --card-colour: #f3f7f9;
-    --accent-colour: #DC5844;
+    /* --accent-colour: #DC5844; */
+    --accent-colour: #e0472e;
     --container-colour: #e3e9eb;
 }
 
