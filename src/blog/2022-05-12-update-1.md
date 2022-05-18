@@ -16,7 +16,6 @@ imageAlt: "Update #1"
 * **Intro** **<a href="#intro"> # </a>**
 * **Recent changes** **<a href="#changes"> # </a>**
 * **Improvements for future** **<a href="#improvements"> # </a>**
-
   * **Using the `picture` tag** **<a href="#picture"> #</a>**
   * **Adding tag filtering <a href="#tags"> # </a>**
   * **Integrating Cloudinary** **<a href="#cloudinary"> # </a>**
