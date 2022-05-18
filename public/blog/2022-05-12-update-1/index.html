@@ -30,7 +30,7 @@
             </div>
 
             <figure class="img-container">
-                <img src="/assets/img/update1.png" alt="Update #1"
+                <img src="/assets/img/update1.jpg" alt="Update #1"
                     srcset="">
                 <figcaption>
                     Update #1
@@ -75,7 +75,7 @@
 <h4><strong>Using the <code>picture</code> tag</strong> <a href="#picture" id="picture"> # </a></h4>
 <p>I haven't optimised images using the <code>picture</code> tag to serve images at smaller sizes on smaller devices. This is something which I did try to implement but, at the moment, it seems to be more of a hassle than it's worth, given that my site is still small and doesn't use loads of images. The biggest issue I am facing is that the images in the 'featured articles' section on the home page and on the cards on the 'blogs' page are taken from the front matter.</p>
 <p>Essentially, each blog is a markdown file with front matter containing the data for each blog, including the main image which is displayed at the start of each article. Using Nunjucks, I loop over each blog post and the images are added from the blog markdown files dynamically.</p>
-<p>In <code>blog-snippet.njk</code>, images are added from the markdown files using <code><img src="" alt="" srcset=""></code>. <code></code> refers to the image key-value pair in the front matter. The issue I am facing is how to set the<code>image src</code> in the front matter for each blog post and use a picture element to load up the correct size image at each media query.</p>
+<p>In <code>blog-snippet.njk</code>, images are added from the markdown files which contains an 'image: url' key-value pair. The issue I am facing is how to set the <code>image src</code> in the front matter for each blog post and use a picture element to load up the correct size image at each media query.</p>
 <p>However, I probably can use the <code>picture</code> tag in the article body to optimise any images used in my articles, so that is something to consider the next time I make changes to my site.</p>
 <h4><strong>Adding tag filtering</strong> <a href="#tags" id="tags"> # </a></h4>
 <p>Something which should be relatively simple, in the next set of changes I make, I need to add tag filtering so that visitors are able to filter through my posts using the relevant tags.</p>
