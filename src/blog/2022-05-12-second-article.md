@@ -58,15 +58,9 @@ There is still work to be done, but I am happy enough with how the site currentl
 
 I haven't optimised images using the `picture` tag to serve images at smaller sizes on smaller devices. This is something which I did try to implement but, at the moment, it seems to be more of a hassle than it's worth, given that my site is still small and doesn't use loads of images. The biggest issue I am facing is that the images in the 'featured articles' section on the home page and on the cards on the 'blogs' page are taken from the front matter. 
 
-Essentially, each blog is a markdown file with front matter containing the data for each blog, including the main image which is displayed at the start of each article. Using Nunjucks, I loop over each blog post:
+Essentially, each blog is a markdown file with front matter containing the data for each blog, including the main image which is displayed at the start of each article. Using Nunjucks, I loop over each blog post and the images are added from the blog markdown files dynamically.
 
-`<ul class="all-cards">
-    {%- for post in collections.post | reverse -%}
-           {% include "blog-snippet.njk" %}
-    {%- endfor -%}
-</ul>`
-
- In `blog-snippet.njk`, images are taken dynamically using `<img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" srcset="">`. The issue I am facing is how to set the`image src` in the front matter for each blog post and use a picture element to load up the correct size image at each media query. 
+ In `blog-snippet.njk`, images are added from the markdown files using `<img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" srcset="">`. `{{post.data.image}}` refers to the image key-value pair in the front matter. The issue I am facing is how to set the`image src` in the front matter for each blog post and use a picture element to load up the correct size image at each media query. 
 
 However, I probably can use the `picture` tag in the article body to optimise any images used in my articles, so that is something to consider the next time I make changes to my site. 
 
