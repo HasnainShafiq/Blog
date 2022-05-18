@@ -13,21 +13,20 @@ imageAlt: "Update #1"
 ---
 #### **Contents**
 
-* **Intro** <a href="#intro"> \*\*#\*\* </a>
-* **Recent changes** <a href="#changes"> \*\*#\*\* </a>
-* **Improvements for future** <a href="#improvements"> \*\*#\*\* </a>
+* **Intro** **<a href="#intro"> # </a>**
+* **Recent changes** **<a href="#changes"> # </a>**
+* **Improvements for future** **<a href="#improvements"> # </a>**
 
-  * **Using the `picture` tag** <a href="#picture"> \*\*#\*\* </a>
-  * **Adding tag filtering** <a href="#tags"> \*\*#\*\* </a>
-  * **Integrating Cloudinary** <a href="#cloudinary"> \*\*#\*\* </a>
-* **Concluding remarks** <a href="#conclusion"> \*\*#\*\* </a>
+  * **Using the `picture` tag** **<a href="#picture"> #</a>**
+  * **Adding tag filtering <a href="#tags"> # </a>**
+  * **Integrating Cloudinary** **<a href="#cloudinary"> # </a>**
+* **Concluding remarks <a href="#conclusion"> # </a>**
 
-
-#### **Intro** <a href="#intro" id="intro"> \*\*#\*\* </a>
+#### **Intro** <a href="#intro" id="intro"> # </a>
 
 In the past few days, I've been working hard on this blog, and I think I'm happy with how it's turned out. It is still lacking in terms of content but that is not an issue, as I will update it whenever I begin a new project or feel the need to share a part of my web development journey. Therefore, I think I am ready to start on another project while maintaining this site and making changes whenever I feel like something could be implemented better. I will talk more about changes that could be made later on. 
 
-#### **Recent changes** <a href="#changes" id="changes"> \*\*#\*\* </a>
+#### **Recent changes** <a href="#changes" id="changes"> # </a>
 
 Firstly, I would like to highlight the main changes that I have made to the site. Some of the main changes include:
 
@@ -47,7 +46,7 @@ One thing which I changed quite drastically whose effects cannot be seen visuall
 
 As a result, I spent a considerable amount of my time cleaning up the CSS and structuring it more logically by using comments to signpost to each section within the stylesheet. Additionally, I removed all the stylings for the nav and footer and stored it in a `global.css` file which I linked to in the head above the specific stylings for each page. This meant that the global stylings were applied across all pages first before the specific stylings were applied. Global stylings were to do with typography, colours, and recurring elements such as the nav and footer. Page-specific stylings were mainly to do with the layouts of the elements using media queries.  
 
-#### **Improvements for future** <a href="#improvements" id="improvements"> \*\*#\*\* </a>
+#### **Improvements for future** <a href="#improvements" id="improvements"> # </a>
 
 There is still work to be done, but I am happy enough with how the site currently is to choose a new project to set my sights on. The main improvements which I have made note of are:
 
@@ -55,32 +54,30 @@ There is still work to be done, but I am happy enough with how the site currentl
 2. Adding tag filtering.
 3. Integrating Cloudinary. 
 
-#### **Using the `picture` tag** <a href="#picture" id="picture"> \*\*#\*\* </a>
+#### **Using the `picture` tag** <a href="#picture" id="picture"> # </a>
 
 I haven't optimised images using the `picture` tag to serve images at smaller sizes on smaller devices. This is something which I did try to implement but, at the moment, it seems to be more of a hassle than it's worth, given that my site is still small and doesn't use loads of images. The biggest issue I am facing is that the images in the 'featured articles' section on the home page and on the cards on the 'blogs' page are taken from the front matter. 
 
 Essentially, each blog is a markdown file with front matter containing the data for each blog, including the main image which is displayed at the start of each article. Using Nunjucks, I loop over each blog post:
 
-```
-<ul class="all-cards">
+`<ul class="all-cards">
     {%- for post in collections.post | reverse -%}
            {% include "blog-snippet.njk" %}
     {%- endfor -%}
-</ul>
-```
+</ul>`
 
  In `blog-snippet.njk`, images are taken dynamically using `<img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" srcset="">`. The issue I am facing is how to set the`image src` in the front matter for each blog post and use a picture element to load up the correct size image at each media query. 
 
 However, I probably can use the `picture` tag in the article body to optimise any images used in my articles, so that is something to consider the next time I make changes to my site. 
 
-#### **Adding tag filtering** <a href="#tags" id="tags"> \*\*#\*\* </a>
+#### **Adding tag filtering** <a href="#tags" id="tags"> # </a>
 
 Something which should be relatively simple, in the next set of changes I make, I need to add tag filtering so that visitors are able to filter through my posts using the relevant tags.
 
-#### **Integrating Cloudinary** <a href="#cloudinary" id="cloudinary"> \*\*#\*\* </a>
+#### **Integrating Cloudinary** <a href="#cloudinary" id="cloudinary"> # </a>
 
 Using a cdn will help me optimise my images and increase site performance. I'm not sure if it will help me solve the issue regarding images taken from front matter not being optimised and sized appropriately for each screen size, but that is something else which I will look into integrating. 
 
-#### **Concluding remarks** <a href="#conclusion" id="conclusion"> \*\*#\*\* </a>
+#### **Concluding remarks** <a href="#conclusion" id="conclusion"> # </a>
 
 Hopefully you can see the work that has been done in the past few days. I am proud of the progress that has been made, even if it may be a little. The site can be improved massively but, at the moment, I am happy with it and think that I am now ready to move on to another project. I will keep you all updated on my next project, so expect more activity on this site in the coming days.
