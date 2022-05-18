@@ -49,9 +49,9 @@ As a result, I spent a considerable amount of my time cleaning up the CSS and st
 
 There is still work to be done, but I am happy enough with how the site currently is to choose a new project to set my sights on. The main improvements which I have made note of are:
 
-1. Using the `picture` tag to increase site performance.
-2. Adding tag filtering.
-3. Integrating Cloudinary. 
+1. Using the `picture` tag to increase site performance. **<a href="#picture"> #</a>**
+2. Adding tag filtering. **<a href="#tags"> # </a>**
+3. Integrating Cloudinary. **<a href="#cloudinary"> # </a>**
 
 #### **Using the `picture` tag** <a href="#picture" id="picture"> # </a>
 
