@@ -220,6 +220,7 @@ footer p, footer a, footer span {
     align-self: flex-start;
     margin: 0 1.5em;
     color: var(--background-colour);
+    padding: 0;
 }
 
 
