@@ -40,9 +40,10 @@ That's when I decided to work from the ground up, building the HTML and CSS for 
 
 I genuinely believe my blog is a successful product overall. However, as with anything, it can be improved. For example, it does not have pagination set up yet. That means that I might at one point end up with twenty or thirty blogs lined up on my 'blogs' page. Of course, I will need to look at the Eleventy docs and other resources to get it set up before I end up with a cluttered 'blogs' page. 
 
-<div class="body-img-container">
 <img src="/assets/img/old-index.jpg" alt="Home Page" title="Two of the blog cards in the 'featured articles' section are made to look unavailable."/>
-</div>
+
+
+<p class = 'edit'>27/05/22: Although I mention further on that I want my index page blog cards to look how they are displayed on the blogs page, after much consideration, I am content with the way they are currently displayed.</p>
 
 Additionally, after having spent a couple days styling my home page, I came to the conclusion that I wasn't happy with the way the blog cards looked within the 'featured articles' section. I want to present the three (or however many I desire) featured articles in the same way as they are displayed on the 'blogs' page. Therefore, I need to think about the styling changes I want to apply and plan how and when I will make them.
 

@@ -27,7 +27,8 @@ TABLE OF CONTENTS:
     box-sizing: border-box;
     --background-colour: #eaeff1;
     /* --accent-colour: #DC5844; */
-    --accent-colour: #e0472e;
+    --card-colour: #f3f7f9;
+    --accent-colour: #dc5844;
     --text-colour: #2c2a2a;
     --light-text-colour: #cccdcd;
     scroll-behavior: smooth;
@@ -37,7 +38,7 @@ TABLE OF CONTENTS:
 
 body {
     background-color: var(--background-colour); 
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
     overflow-x: hidden;
 }
 
@@ -87,7 +88,7 @@ h1, .article-title h4{
 }
 
 .article-body h4 {
-    padding: 3rem 0 0;
+    padding: 1.5rem 0 0;
 }
 
 h1{
@@ -100,7 +101,7 @@ h1{
 }
 
 .article-container {
-    padding: 3rem 1rem;
+    padding: 3rem 2.5rem;
     position: relative;
     grid-column: 2 / 3;
     align-items: center;
@@ -111,15 +112,21 @@ h1{
     max-width: 1000px;
 }
 
-p, figcaption, .article-body ul, .article-body ol, .article-body a, .article-body span {
-    font-family: 'Poppins', sans-serif;
+p, figcaption, .article-body ul, .article-body ol, .article-body a, .article-body span, pre, .edit {
     font-size: 1.6rem;
     max-width: 70ch;
     line-height: 1.75;
 }
 
+p, .article-body a, .article-body span, .edit {
+    font-family: 'Roboto Slab', serif;
+} 
+
+footer p {
+    font-family: 'Poppins', sans-serif;
+}
+
 .article-body ul, .article-body ol {
-    width: 100%;
     align-self: flex-start;
 }
 
@@ -130,7 +137,6 @@ p, figcaption, .article-body ul, .article-body ol, .article-body a, .article-bod
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-start;
-    padding: 0 1rem;
 }
 
 .article-body a {
@@ -138,13 +144,13 @@ p, figcaption, .article-body ul, .article-body ol, .article-body a, .article-bod
 }
 
 .article-body ul, .article-body ol {
-    padding: 2rem 1em 0;
+    padding: 0 1em;
 }
 
 .article-body ul li, .article-body ol li {
     font-weight: 600;
+    padding: 1rem 0;
     color: var(--text-colour);
-    padding: .2rem 0;
 }
 
 li::marker {
@@ -157,7 +163,6 @@ figcaption{
 
 .img-container {
     align-self: center;
-    padding: 3em;
 }
 
 img{
@@ -188,14 +193,49 @@ main {
   }
 
 p {
-    width: 100%;
-    padding: 3rem 0 0;
+    padding: 1.5rem 0;
     margin-bottom: 0;
 }
 
-h4 + p, ul + p, ol + p {
+/* h4 + p, ul + p, ol + p {
     padding: 1rem 0 0;
 }
+ */
+pre {
+    white-space: pre-wrap;
+    align-self: center;
+    justify-content: flex-start;
+    margin: 2.5rem 0;
+    line-height: 1.5;
+    overflow: auto;
+    overflow-y: hidden;
+    background: var(--card-colour);
+    padding: 1.5rem 2rem;
+    border-left: var(--accent-colour) 7px solid;
+    border-radius: 1rem;
+ /*    box-shadow: rgb(44, 42, 42, .5) 0px 0px 5px; */
+}
+
+.edit {
+    background-color: var(--accent-colour);
+    color: var(--card-colour);
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0;
+}
+
+code {
+    background-color: var(--light-text-colour);
+    padding: .2rem .5rem;
+    border-radius: .4rem;
+}
+
+pre > code {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+}
+
 
 @media only screen and (min-width: 360px) {
 
@@ -239,20 +279,19 @@ h4 + p, ul + p, ol + p {
 
 @media only screen and (min-width: 500px) {
 
+    .article-container {
+        padding: 3rem;
+    }
+
     .article-title {
         padding: 1rem 2rem 4rem;
     }
-
-    .article-body {
-        padding: 0 1.5rem;
-    }
-
 
     h1{
         font-size: 4rem;
     }
  
-    .article-title h4, h4, .article-body a, p, .article-body li {
+    .article-title h4, h4, .article-body a, p, .article-body li, pre, .edit {
         font-size: 1.6rem;
     }
 
@@ -263,11 +302,12 @@ h4 + p, ul + p, ol + p {
     .article-body h4 {
         font-size: 2rem;
     }
-
-    .body-img-container {
+    
+    .article-body img {
         align-self: center;
         padding: 1.5rem 0;
-    }
+        margin: 1.5rem 0;
+    } 
 
     img{
         max-width: 350px;
@@ -287,6 +327,10 @@ h4 + p, ul + p, ol + p {
 
 
 @media only screen and (min-width: 600px) {
+
+    .article-container {
+        padding: 3rem 4rem;
+    }
 
     .article-title {
         padding: 1rem 3.5rem 4rem;
@@ -308,21 +352,25 @@ h4 + p, ul + p, ol + p {
         font-size: 1.6rem;
     }
 
-    /* .article-container {
-        padding: 3rem 1rem;
-    } */
+    .article-container {
+        padding: 3rem 5rem;
+    } 
 
     .article-body h4 {
         font-size: 2rem;
     }
     
     p, .article-body li {
-        max-width: 60ch;
+        max-width: 70ch;
     }
 
 }
 
 @media only screen and (min-width: 709px) {
+
+    .article-container {
+        padding: 3rem 7rem;
+    }
 
     .article-title {
         padding: 1rem 6rem 4rem;
@@ -353,6 +401,10 @@ h4 + p, ul + p, ol + p {
 
 @media only screen and (min-width: 800px) {
 
+    .article-container {
+        padding: 3rem 8rem;
+    }
+
     h1 {
         font-size: 4.5rem;
     }
@@ -366,7 +418,7 @@ h4 + p, ul + p, ol + p {
         padding: 0;
     }
 
-    .article-title h4, .article-body a, p, .article-body li {
+    .article-title h4, .article-body a, p, .article-body li, pre, .edit {
         font-size: 1.8rem;
     }
 
@@ -429,8 +481,8 @@ h4 + p, ul + p, ol + p {
     }
 
     .article-container {
-        padding: 6rem 1rem;
-    }
+        padding: 3rem 2rem;
+    } 
 
     .article-body {
         padding: 0;
