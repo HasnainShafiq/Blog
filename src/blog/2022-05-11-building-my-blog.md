@@ -32,7 +32,7 @@ So I decided to crack on with it and build my portfolio. I got around to complet
 
 I generally suck at acknowleding my strengths and giving myself credit where it's due, so I will try my best to give an honest reflection of what I think I did well. To start off with, I actually saw this project through till the end. There have been times in the past where I have lost interest in a project midway through, never to return to it again. The fact that this is the biggest project I have worked on and I did not lose track is a big accomplishment. To be honest, completing this blog website has given me further incentive to study hard and to practice coding as much as I can. Even though this website has many things which I know can be improved on, I am still really pleased with how it's turned out.
 
-I did hit a roadblock at one point when I was struggling to integrate Eleventy into my code. A few weeks back, I saw *Kevin Powell* had a [Youtube video tutorial](https://www.youtube.com/watch?v=4wD00RT6d-g) for making a blog page with Eleventy and Netlify CMS, so I thought I would take a look. However, even though I had cloned his repository from Github and was following along with his tutorial, I was still not managing to get my website to work the same as his. So I gave up (temporarily). 
+I did hit a roadblock at one point when I was struggling to integrate Eleventy into my code. A few weeks back, I saw Kevin Powell had a [Youtube video tutorial](https://www.youtube.com/watch?v=4wD00RT6d-g) for making a blog page with Eleventy and Netlify CMS, so I thought I would take a look. However, even though I had cloned his repository from Github and was following along with his tutorial, I was still not managing to get my website to work the same as his. So I gave up (temporarily). 
 
 That's when I decided to work from the ground up, building the HTML and CSS for the blog by myself and styling it the way I wanted. Once that was set up, which took me about three days, I returned to the Eleventy tutorial. This time I made sure to Google any issues I was facing and I reminded myself that it is a learning process. Therefore, despite facing issues as you normally do, I stayed committed and managed to eventually get everything up and running. What you have before you is the product of five days of building the structure of my blog, styling it the way I liked, and integrating it with Eleventy and Netlify CMS, so that I can add new articles to my blog effortlessly.
 
@@ -41,7 +41,6 @@ That's when I decided to work from the ground up, building the HTML and CSS for 
 I genuinely believe my blog is a successful product overall. However, as with anything, it can be improved. For example, it does not have pagination set up yet. That means that I might at one point end up with twenty or thirty blogs lined up on my 'blogs' page. Of course, I will need to look at the Eleventy docs and other resources to get it set up before I end up with a cluttered 'blogs' page. 
 
 <img src="/assets/img/old-index.jpg" alt="Home Page" title="Two of the blog cards in the 'featured articles' section are made to look unavailable."/>
-
 
 <p class = 'edit'>27/05/22: Although I mention further on that I want my index page blog cards to look how they are displayed on the blogs page, after much consideration, I am content with the way they are currently displayed.</p>
 
