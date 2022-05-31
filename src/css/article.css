@@ -85,6 +85,7 @@ h1, .article-title h4{
 
 .article-title h4 {
     font-size: 1.6rem;
+    font-weight: 300;
 }
 
 .article-body h4 {
@@ -117,6 +118,7 @@ p, figcaption, .article-body ul, .article-body ol, .article-body a, .article-bod
     max-width: 70ch;
     line-height: 1.75;
 }
+
 
 p, .article-body a, .article-body span, .edit {
     font-family: 'Roboto Slab', serif;
