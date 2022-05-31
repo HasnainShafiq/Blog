@@ -28,7 +28,7 @@ TABLE OF CONTENTS:
     --background-colour: #eaeff1;
     /* --accent-colour: #DC5844; */
     --card-colour: #f3f7f9;
-    --accent-colour: #dc5844;
+    --accent-colour: rgb(224, 71, 46);
     --text-colour: #2c2a2a;
     --light-text-colour: #cccdcd;
     scroll-behavior: smooth;
@@ -120,6 +120,8 @@ p, figcaption, .article-body ul, .article-body ol, .article-body a, .article-bod
 
 p, .article-body a, .article-body span, .edit {
     font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    word-spacing: 1.5px;
 } 
 
 footer p {
