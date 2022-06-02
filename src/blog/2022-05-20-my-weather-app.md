@@ -1,5 +1,5 @@
 ---
-title: My Next Project (WIP)
+title: My WeatherAPI App
 description: A short review of the building process of my weather application which benefits from WeatherAPI and the Unsplash API.
 author: Hasnain Shafiq
 date: 2022-05-20
