@@ -16,7 +16,7 @@ imageAlt: A screenshot of my weather app.
 
 #### **Intro** <a href="#intro" id="intro"> **\#** </a>
 
-Welcome to a short review of my second complete project. This project was an attempt at demonstrating my back end capabilities, especially since this blog itself was largely focused on the front end. Despite being a relatively simple project which many aspiring junior web developers include as part of their portfolios, it served as a refresher of certain concepts which I had forgotten, given that I hadn't had much practice with the back end. Read on for my review of my take on the classic weather API application.
+Welcome to a short review of my second complete [project](https://uncreative-creativity.github.io/weather-api/). This project was an attempt at demonstrating my back end capabilities, especially since this blog itself was largely focused on the front end. Despite being a relatively simple project which many aspiring junior web developers include as part of their portfolios, it served as a refresher of certain concepts which I had forgotten, given that I hadn't had much practice with the back end. Read on for my review of my take on the classic weather API application.
 
 #### **What went well** <a href="#what-went-well" id="what-went-well"> **\#** </a>
 
