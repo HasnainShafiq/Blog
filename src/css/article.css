@@ -170,10 +170,11 @@ figcaption{
 }
 
 img{
-    max-width: 270px;
+    max-width: 85%;
     object-fit: contain;
     height: auto;
-    align-self: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .article-title{
@@ -253,7 +254,7 @@ pre > code {
     }
 
     img {
-        max-width: 100%;
+        max-width: 250px;
     }
 }
 
@@ -266,6 +267,10 @@ pre > code {
 
     .article-title h4 {
         max-width: 28ch;
+    }
+
+    img {
+        max-width: 320px;
     }
 
 }
