@@ -2,6 +2,7 @@
 ------
 TABLE OF CONTENTS: 
     - ROOT
+    - MAIN
     - TYPOGRAPHY
     - BODY : 
         - .article-container
@@ -45,6 +46,12 @@ TABLE OF CONTENTS:
     scroll-behavior: smooth;
 }
 
+/* --- MAIN --- */
+
+main {
+    align-items: center;
+}
+
 /* --- TYPOGRAPHY --- */
 
 h1, .article-title h4{
@@ -79,6 +86,7 @@ h4 {
 p {
     padding: 1.5rem 0;
     margin-bottom: 0;
+    max-width: 100%;
 }
 
 p, figcaption, .article-body li, .article-body a, .article-body span, pre, .edit {
@@ -103,7 +111,7 @@ p, .article-body a, .article-body span, .edit {
     color: var(--text-colour);
 }
 
-footer p, footer a {
+footer p, footer a, footer span {
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
 }
@@ -135,7 +143,7 @@ ol {
     justify-items: center;
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
+    max-width: 750px;
 }
 
 /* --- .article-title --- */
@@ -180,7 +188,8 @@ li::marker {
 .edit {
     background-color: var(--accent-colour);
     color: var(--card-colour);
-    padding: 1.5rem 1rem;
+    align-self: center;
+    padding: 2rem 4rem;
     margin: 1.5rem 0;
 }
 
@@ -312,7 +321,7 @@ pre > code {
         max-width: 37ch;
     }
  
-    footer p, footer a {
+    footer p, footer a, footer span {
         font-size: 1.6rem;
     }    
 
@@ -371,7 +380,7 @@ pre > code {
         padding: 1rem 5rem 4rem;
     }
     
-    p, .article-body li {
+    .article-body li {
         max-width: 70ch;
     }
 
@@ -487,6 +496,11 @@ pre > code {
         width: 100%;
     }
 
+    .article-container {
+        padding: 3rem 2rem;
+        max-width: 1000px;
+    } 
+
     .article-title{
         padding: 1rem 2rem 4rem;
         max-width: 650px;
@@ -500,10 +514,6 @@ pre > code {
         font-size: 1.8rem;
         padding-left: 3rem;
     }
-
-    .article-container {
-        padding: 3rem 2rem;
-    } 
 
     .article-body {
         padding: 0;
