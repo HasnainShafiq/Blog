@@ -1,24 +1,34 @@
-
 /* 
 ------
 TABLE OF CONTENTS: 
+    - ROOT
+    - TYPOGRAPHY
+    - BODY : 
+        - .article-container
+        - .article-title
+        - .img-container
+        - .article-body & ul/ol styles
+        - .edit
+    - FIGCAPTION & IMG
+    - PRE & CODE
 
-- CSS RESET
-- STYLES FOR INDEX.HTML
-    - :root
-    - body
-    - nav and nav links
-    - main
-    - hero section
-    - featured articles section
-    - card styles
-    - footer
-
-- MEDIA QUERIES
+- MEDIA QUERIES:
+    - 360px
+    - 400px
+    - 438px
+    - 500px
+    - 580px
+    - 600px
+    - 660px
+    - 709px
+    - 740px
+    - 750px
+    - 800px
+    - 850px
+    - 900px
+    - 1200px
 ------
-
 */
-
 
 /* --- ROOT --- */
 
@@ -32,6 +42,68 @@ TABLE OF CONTENTS:
     --text-colour: #2c2a2a;
     --light-text-colour: #cccdcd;
     scroll-behavior: smooth;
+}
+
+/* --- TYPOGRAPHY --- */
+
+h1, .article-title h4{
+    justify-self: center;
+    line-height: 1.5;
+    align-self: center;
+    padding-top: 0;
+}
+
+h1{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.25;
+    max-width: 70ch;
+    text-align: left;
+    color: black;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+.article-title h4 {
+    font-weight: 300;
+}
+
+.article-body h4 {
+    padding: 1.5rem 0 0;
+    width: 100%;
+}
+
+p {
+    padding: 1.5rem 0;
+    margin-bottom: 0;
+}
+
+p, figcaption, .article-body ul, .article-body ol, .article-body a, .article-body span, pre, .edit {
+    font-size: 1.6rem;
+    max-width: 70ch;
+    line-height: 1.75;
+}
+
+p, .article-body a, .article-body span, .edit {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    word-spacing: 1.5px;
+} 
+
+.article-body a {
+    color: var(--accent-colour);
+}
+
+.article-body ul li, .article-body ol li {
+    font-weight: 600;
+    padding: 1rem 0;
+    color: var(--text-colour);
+}
+
+footer p {
+    font-family: 'Poppins', sans-serif;
 }
 
 /* --- BODY --- */
@@ -50,56 +122,7 @@ ol {
     list-style: decimal;
 }
 
-h4 {
-    font-weight: 500;
-}
-
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-self: center;
-    position: relative;
-    left: 0;
-    width: 100%;
-}
-
-.article-title{
-    display: flex;
-    flex-direction: column;
-    padding: 2em 5em;
-    align-self: center;
-    align-items: center;
-    row-gap: 1em;
-}
-
-h1, .article-title h4{
-    justify-self: center;
-    line-height: 1.5;
-    align-self: center;
-    padding-top: 0;
-}
-
-.article-title h4 {
-    font-size: 1.6rem;
-    font-weight: 300;
-}
-
-.article-body h4 {
-    padding: 1.5rem 0 0;
-}
-
-h1{
-    font-size: 2.4rem;
-    font-weight: 600;
-    line-height: 1.25;
-    max-width: 70ch;
-    text-align: left;
-    color: black;
-}
+/* --- .article-container --- */
 
 .article-container {
     padding: 3rem 2.5rem;
@@ -113,26 +136,21 @@ h1{
     max-width: 1000px;
 }
 
-p, figcaption, .article-body ul, .article-body ol, .article-body a, .article-body span, pre, .edit {
-    font-size: 1.6rem;
-    max-width: 70ch;
-    line-height: 1.75;
+/* --- .article-title --- */
+
+.article-title{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 5em;
+    align-self: center;
+    align-items: center;
+    row-gap: 1em;
+    justify-content: center;
+    padding: 1rem 1.5rem 4em;
+    max-width: 650px;
 }
 
-
-p, .article-body a, .article-body span, .edit {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    word-spacing: 1.5px;
-} 
-
-footer p {
-    font-family: 'Poppins', sans-serif;
-}
-
-.article-body ul, .article-body ol {
-    align-self: flex-start;
-}
+/* --- .article-body & ul/ol styles --- */
 
 .article-body {
     justify-self: center;
@@ -143,23 +161,28 @@ footer p {
     align-items: flex-start;
 }
 
-.article-body a {
-    color: var(--accent-colour);
+.article-body ul, .article-body ol {
+    align-self: flex-start;
 }
 
 .article-body ul, .article-body ol {
     padding: 0 1em;
 }
 
-.article-body ul li, .article-body ol li {
-    font-weight: 600;
-    padding: 1rem 0;
-    color: var(--text-colour);
-}
-
 li::marker {
     color: var(--accent-colour);
 }
+
+/* --- .edit --- */
+
+.edit {
+    background-color: var(--accent-colour);
+    color: var(--card-colour);
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0;
+}
+
+/* --- FIGCAPTION & IMG --- */
 
 figcaption{
     padding: 0;
@@ -177,35 +200,8 @@ img{
     margin: 0 auto;
 }
 
-.article-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem 1.5rem 4em;
-    max-width: 650px;
-}
+/* --- PRE & CODE --- */
 
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.article-body h4 {
-    font-size: 1.8rem;
-    width: 100%;
-  }
-
-p {
-    padding: 1.5rem 0;
-    margin-bottom: 0;
-}
-
-/* h4 + p, ul + p, ol + p {
-    padding: 1rem 0 0;
-}
- */
 pre {
     white-space: pre-wrap;
     align-self: center;
@@ -218,14 +214,6 @@ pre {
     padding: 1.5rem 2rem;
     border-left: var(--accent-colour) 7px solid;
     border-radius: 1rem;
- /*    box-shadow: rgb(44, 42, 42, .5) 0px 0px 5px; */
-}
-
-.edit {
-    background-color: var(--accent-colour);
-    color: var(--card-colour);
-    padding: 1.5rem 1rem;
-    margin: 1.5rem 0;
 }
 
 code {
@@ -241,8 +229,9 @@ pre > code {
     width: 100%;
 }
 
+/* --- 360px --- */
 
-@media only screen and (min-width: 360px) {
+@media (min-width: 360px) {
 
     h1 {
         font-size: 2.8rem;
@@ -258,7 +247,9 @@ pre > code {
     }
 }
 
-@media only screen and (min-width: 400px) {
+/* --- 400px --- */
+
+@media (min-width: 400px) {
 
     h1 {
         max-width: 45ch;
@@ -275,7 +266,9 @@ pre > code {
 
 }
 
-@media only screen and (min-width: 438px) {
+/* --- 438px --- */
+
+@media (min-width: 438px) {
 
     h1 {
     text-align: center;
@@ -288,9 +281,9 @@ pre > code {
 
 }
 
+/* --- 500px --- */
 
-
-@media only screen and (min-width: 500px) {
+@media (min-width: 500px) {
 
     .article-container {
         padding: 3rem;
@@ -303,43 +296,44 @@ pre > code {
     h1{
         font-size: 4rem;
     }
- 
-    .article-title h4, h4, .article-body a, p, .article-body li, pre, .edit {
-        font-size: 1.6rem;
-    }
 
     .article-title h4 {
         max-width: 37ch;
+    }
+ 
+    .article-title h4, h4, .article-body a, p, .article-body li, pre, .edit {
+        font-size: 1.6rem;
     }
 
     .article-body h4 {
         font-size: 2rem;
     }
     
+    img{
+        max-width: 350px;
+    }
+
     .article-body img {
         align-self: center;
         padding: 1.5rem 0;
         margin: 1.5rem 0;
     } 
 
-    img{
-        max-width: 350px;
-    }
-
 }
 
+/* --- 580px --- */
 
-@media only screen and (min-width: 580px) {
+@media (min-width: 580px) {
 
-    
     .article-title {
         padding: 1rem 2.5rem 4rem;
     }
 
 }
 
+/* --- 600px --- */
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
 
     .article-container {
         padding: 3rem 4rem;
@@ -354,22 +348,19 @@ pre > code {
     }
 }
 
-@media only screen and (min-width: 660px) {
+/* --- 660px --- */
 
+@media (min-width: 660px) {
+
+    .article-container {
+        padding: 3rem 5rem;
+    } 
 
     .article-title {
         padding: 1rem 5rem 4rem;
     }
 
     h4 {
-        font-size: 1.6rem;
-    }
-
-    .article-container {
-        padding: 3rem 5rem;
-    } 
-
-    .article-body h4 {
         font-size: 2rem;
     }
     
@@ -379,7 +370,9 @@ pre > code {
 
 }
 
-@media only screen and (min-width: 709px) {
+/* --- 709px --- */
+
+@media (min-width: 709px) {
 
     .article-container {
         padding: 3rem 7rem;
@@ -395,16 +388,19 @@ pre > code {
 
 }
 
-@media only screen and (min-width: 740px) {
+/* --- 740px --- */
 
-    
+@media  (min-width: 740px) {
+
     .article-title {
         padding: 1rem 7rem 4rem;
     }
 
 }
 
-@media only screen and (min-width: 750px) {
+/* --- 750px --- */
+
+@media  (min-width: 750px) {
 
     h1 {
         font-size: 4.5rem;
@@ -412,18 +408,20 @@ pre > code {
     
 }
 
-@media only screen and (min-width: 800px) {
+/* --- 800px --- */
+
+@media (min-width: 800px) {
 
     .article-container {
         padding: 3rem 8rem;
     }
 
-    h1 {
-        font-size: 4.5rem;
-    }
-
     .article-title {
         padding: 1rem 9rem 4rem;
+    }
+
+    h1 {
+        font-size: 4.5rem;
     }
    
     .article-title h4 {
@@ -440,7 +438,9 @@ pre > code {
     }
 }
 
-@media only screen and (min-width: 850px) {
+/* --- 850px --- */
+
+@media (min-width: 850px) {
 
     .article-title {
         padding: 1rem 9rem 4rem;
@@ -453,8 +453,9 @@ pre > code {
 
 }
 
+/* --- 900px --- */
 
-@media only screen and (min-width: 900px) {
+@media (min-width: 900px) {
 
     h1{
         font-size: 50px;
@@ -467,9 +468,9 @@ pre > code {
 
 }
 
+/* --- 1200px --- */
 
-@media only screen and (min-width: 1200px) {
-
+@media (min-width: 1200px) {
 
     main {
         display: grid;
