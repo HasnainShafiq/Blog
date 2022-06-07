@@ -189,7 +189,7 @@ li::marker {
     background-color: var(--accent-colour);
     color: var(--card-colour);
     align-self: center;
-    padding: 2rem 4rem;
+    padding: 2rem;
     margin: 1.5rem 0;
 }
 
