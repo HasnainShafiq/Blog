@@ -136,14 +136,10 @@ ol {
 
 .article-container {
     padding: 3rem 2.5rem;
-    position: relative;
-    grid-column: 2 / 3;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
     display: flex;
     flex-direction: column;
     max-width: 750px;
+    margin: 0 auto;
 }
 
 /* --- .article-title --- */
