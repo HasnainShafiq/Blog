@@ -370,10 +370,6 @@ pre > code {
     .article-title {
         padding: 1rem 5rem 4rem;
     }
-
-    h4 {
-        font-size: 2rem;
-    }
     
     p, .article-body li {
         max-width: 70ch;
