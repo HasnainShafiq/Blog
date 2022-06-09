@@ -62,7 +62,6 @@ h1, .article-title h4{
 }
 
 h1{
-    font-size: 2.4rem;
     font-weight: 600;
     line-height: 1.25;
     max-width: 70ch;
@@ -89,14 +88,17 @@ p {
     max-width: 100%;
 }
 
-p, figcaption, .article-body li, .article-body a, .article-body span, pre, .edit {
-    font-size: 1.6rem;
-    max-width: 70ch;
+p, figcaption, .article-body li, .article-body a, .article-body span, .edit {
+    font-size: 1.4rem;
+    max-width: 50ch;
     line-height: 1.75;
 }
 
+.article-body span {
+    color: #cccdcd;
+}
+
 p, .article-body a, .article-body span, .edit {
-    font-family: 'Roboto Slab', serif;
     font-weight: 400;
     word-spacing: 1.5px;
 } 
@@ -113,7 +115,6 @@ p, .article-body a, .article-body span, .edit {
 
 footer p, footer a, footer span {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
 }
 
 /* --- BODY --- */
@@ -135,7 +136,7 @@ ol {
 /* --- .article-container --- */
 
 .article-container {
-    padding: 3rem 2.5rem;
+    padding: 3em 2em 0;
     display: flex;
     flex-direction: column;
     max-width: 750px;
@@ -200,7 +201,7 @@ figcaption{
 }
 
 img{
-    max-width: 245px;
+    max-width: 100%;
     object-fit: contain;
     height: auto;
     display: block;
@@ -210,17 +211,14 @@ img{
 /* --- PRE & CODE --- */
 
 pre {
-    white-space: pre-wrap;
-    align-self: center;
     justify-content: flex-start;
-    margin: 2.5rem 0;
-    line-height: 1.5;
-    overflow: auto;
-    overflow-y: hidden;
-    background: var(--card-colour);
-    padding: 1.5rem 2rem;
-    border-left: var(--accent-colour) 7px solid;
-    border-radius: 1rem;
+    font-family: 'Roboto Slab', sans-serif;
+    overflow-x: scroll;
+    background: rgb(99, 95, 95);
+    color: #eaeff1;
+    font-size: 1.2rem;
+    padding: 1em;
+    max-width: 37ch;
 }
 
 code {
@@ -242,6 +240,10 @@ pre > code {
     footer p {
         margin: 0;
     }
+
+    pre {
+        max-width: 42ch;
+    }
 }
 
 
@@ -261,6 +263,10 @@ pre > code {
     img {
         max-width: 250px;
     }
+
+    pre {
+        max-width: 48ch;
+    }
 }
 
 /* --- 400px --- */
@@ -272,12 +278,20 @@ pre > code {
         font-size: 3rem;
     }
 
+    p, figcaption, .article-body li, .article-body a, .article-body span, .edit {
+        max-width: 55ch;
+    }
+
     .article-title h4 {
         max-width: 28ch;
     }
 
     img {
         max-width: 320px;
+    }
+
+    pre {
+        max-width: 54ch;
     }
 
 }
@@ -293,6 +307,10 @@ pre > code {
 
     .article-title h4 {
         max-width: 33ch;
+    }
+
+    pre {
+        max-width: 55ch;
     }
 
 }
@@ -335,6 +353,20 @@ pre > code {
         margin: 1.5rem 0;
     } 
 
+    pre {
+        max-width: 60ch;
+    }
+
+}
+
+@media (min-width: 540px){
+    p, figcaption, .article-body li, .article-body a, .article-body span, .edit {
+        max-width: 70ch;
+    }
+
+    pre {
+        max-width: 70ch;
+    }
 }
 
 /* --- 580px --- */
@@ -361,6 +393,10 @@ pre > code {
 
     img{
         max-width: 400px;
+    }
+
+    pre {
+        align-self: center;
     }
 }
 
@@ -447,6 +483,10 @@ pre > code {
 
     .article-body h4 {
         font-size: 2rem;
+    }
+
+    pre {
+        max-width: 60ch;
     }
 }
 
