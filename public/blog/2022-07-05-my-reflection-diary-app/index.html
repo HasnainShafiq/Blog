@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/article.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <title>My Reflection Diary App</title>
+</head>
+<body>
+    <nav>
+    <h5 class="brand"><a href="/">Hasnain.</a></h5>
+    <div class="nav-links">
+        <ul>
+            <li class="nav-link"><a href="/">Home</a></li>
+            <li class="nav-link"><a href="/blog">Blogs</a></li>
+        </ul>
+    </div>
+</nav> 
+    <main>
+    
+
+        <div class="article-container">
+            <div class="article-title">
+                <h1>My Reflection Diary App</h1>
+                <h4>A brief overview of my latest project: A full CRUD reflection diary app which uses RESTful routes.</h4>
+            </div>
+
+            <figure class="img-container">
+                <img src="/assets/img/reflections-app-blog-cover.jpg" alt="The Reflections application logo."
+                    srcset="">
+                <figcaption>
+                    The Reflections application logo.
+                </figcaption>
+            </figure>
+            <section class="article-body">
+           <h4><strong>Contents</strong></h4>
+<ul>
+<li><strong>Intro</strong> <strong><a href="#intro">#</a></strong></li>
+<li><strong>The build process</strong> <strong><a href="#the-build-process">#</a></strong></li>
+<li><strong>Next steps</strong>  <strong><a href="#next-steps">#</a></strong></li>
+</ul>
+<h4><strong>Intro</strong> <a href="#intro" id="intro"> <strong>#</strong> </a></h4>
+<p>Hello! It has been a while since my last blog post which was about my weather API application. Since then, I have finished my degree and I enjoyed a short break from coding. However, I am back and have another project to share with you. My latest project is a reflection diary app, inspired by Presently. At the moment, the minimal viable product is almost complete. However, without user authentication, the app runs into problems. Therefore, I am in the process of learning about authentication and related concepts, in the hopes that I will soon be able to implement it in my own project and deploy my project as soon as possible.</p>
+<h4><strong>The build process</strong> <a href="#the-build-process" id="the-build-process"> <strong>#</strong> </a></h4>
+<p>I built this app using Mongo Atlas, Express, EJS, and vanilla JavaScript. The first step of building this project was having a plan in mind of what functions the app would perform and how. Therefore, the first step was setting up my schema and model in Mongo.</p>
+<pre><code><span>models/reflection.js</span>
+
+const ReflectionSchema = new schema({
+    prompt: String,
+    body: String,
+})
+
+const Reflection = mongoose.model('Reflection', ReflectionSchema);
+</code></pre>
+<p>Once I confirmed that my model was working and I was able to perform Mongo functions, such as <code>.find({})</code> and <code>.save()</code>, I moved onto setting up the routing for for my Express server.</p>
+<p>I set up <code>GET</code>, <code>POST</code>, <code>PUT</code>, and <code>DELETE</code> routes which were used to send requests to the server to send and receive data. For example, sending a <code>GET</code> request to <code>/new</code> will render <code>new.ejs</code>, a page allowing the user to add a new reflection entry. Clicking 'save' sends a <code>POST</code> request to the index page and saves the entry to the Mongo Atlas database. You can't send <code>PUT</code> and <code>DELETE</code> requests in HTML forms, so I made use of the 'method-override' middleware in order to send these two type of requests to the server.</p>
+<img src="/assets/img/ezgif.com-gif-maker.gif" alt="A gif demonstrating adding a new post" title="A gif demonstrating adding a new post"/>
+<p>Once I was happy with the routing and had confirmed that my Mongo Atlas cluster was connected to my Express app, I used EJS to flesh out the user interface. I created a basic boilerplate which was shared by all <code>.ejs</code> files. The site uses minimal JS to apply some styles when a button is clicked and to show a modal asking for confirmation when the user wants to delete a post.</p>
+<img src="/assets/img/ezgif.com-gif-maker(2).gif" alt="A gif demonstrating deleting a post" title="A gif demonstrating deleting a post"/>
+<p>Finally, I used CSS to make the site more presentable. It isn't the cleanest nor the most aesthetic design, but considering I struggled to think of a suitable theme for this project, I am glad I was able to keep it minimalist while still looking presentable.</p>
+<h4><strong>Next steps</strong> <a href="#next-steps" id="next-steps"> <strong>#</strong> </a></h4>
+<p>My main goal is to learn about and implement user authentication within this project. When I planned my project, I wanted to make something which would challenge me and force me to learn new concepts. Seeing as this was my first project which made use of Mongo and Express without following any tutorials, I feel like I have been adequately challenged. I ran into my fair share of troubles which meant that I had to find out what went wrong, why it went wrong, and how to fix it. For the most part, it was enjoyable and I found it to be a very good learning experience, but I still have a bit more learning to do. Once I have succesfully implemented user authentication, my app will be ready for deployment!</p>
+
+           </section>
+
+        </div>
+
+    </main>
+    <footer>
+    <p>&copy; Hasnain Shafiq 2022. All rights reserved.</p>
+    <a href="mailto: hh.shafiq@outlook.com">Email: <span>hh.shafiq@outlook.com</span></a>
+</footer>
+
+
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>
