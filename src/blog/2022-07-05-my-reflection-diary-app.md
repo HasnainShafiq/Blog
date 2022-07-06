@@ -19,7 +19,7 @@ Hello! It has been a while since my last blog post which was about my weather AP
 
 #### **The build process** <a href="#the-build-process" id="the-build-process"> **\#** </a>
 
-I built this app using Mongo Atlas, Express, EJS, and vanilla JavaScript. The first step of building this project was having a plan in mind of what functions the app would perform and how. Therefore, the first step was setting up my schema and model in Mongo. 
+I built this app using Mongo Atlas, Express, EJS, and vanilla JavaScript. The first step of building this project was having a plan in mind of what functions the app would perform and how. After drafting a plan for how I would implement CRUD functionality using RESTful routes, I started with defining a schema for the reflective entries. 
 
 <pre><code><span>models/reflection.js</span>
 
