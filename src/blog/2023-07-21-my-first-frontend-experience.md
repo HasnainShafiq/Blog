@@ -4,7 +4,7 @@ description: 'A reflective account of my first role as a junior frontend develop
 author: Hasnain Shafiq
 date: 2023-07-21
 tags: ["post", "featured"]
-image: /assets/img/i22.jpg
+image: /assets/img/i22-logo.jpg
 imageAlt: Intelligence22 logo.
 ---
 #### **Contents**
