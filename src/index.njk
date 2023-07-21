@@ -28,7 +28,7 @@ layout: "/layouts/index-base.njk"
     </div>
 
     <ul class="all-cards">
-       {%- for post in collections.featured -%}
+       {%- for post in collections.featured | reverse -%}
            {% include "featured-blogs-snippet.njk" %}
        {%- endfor %}
     </ul>
