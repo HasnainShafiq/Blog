@@ -31,15 +31,15 @@ Overall, despite the fact that it was a short stint, I would describe it as a po
 
 #### **Lessons** <a href="#lessons" id="lessons"> **\#** </a>
 
-#### **Communicate needs and progress**  <a href="#communicate-needs" id="communicate-needs"> # </a>
+#### **Communicate needs and progress**  <a href="#communicate-needs" id="communicate-needs"> **\#** </a>
 
 This probably goes without saying, but it is something which I only began practising a few weeks after I began developing Vue components and making changes to the UI. As a self-taught developer, I was used to working independently, which meant that I was getting my tasks done but I wasn't necessarily communicating how I was getting along. It was after a meeting with the project manager that I began documenting my daily tasks, my progress, any issues I was having, and when I expected to complete them. Not only did this help my colleagues, it also helped me manage my tasks better and plan my time more effectively.
 
-#### **Don't demand too much from yourself**  <a href="#demands" id="demands"> # </a>
+#### **Don't demand too much from yourself**  <a href="#demands" id="demands"> **\#** </a>
 
 As mentioned earlier, this was my first job working as a developer. As a result, I subconsciously placed unneeded pressure on myself. I expected myself to power through the Vue training as quickly as I could so that I could begin contributing sooner. Also, despite reassurance from colleagues that my work was of a good quality, I still had nagging doubts. However, looking back on it, I realise that I was doing just fine. If I could go back, I would tell myself to relax a little because the learning process is a slow one and there will always be things you don't know.  
 
-#### **Know what you want**  <a href="#know-what-you-want" id="know-what-you-want"> # </a>
+#### **Know what you want**  <a href="#know-what-you-want" id="know-what-you-want"> **\#** </a>
 
 This is something which I could only learn after having gained some experience in the field. Prior to accepting the job at Intelligence22, I was happy to accept whatever offer came my way. I didn't give much thought to whether I would like to work in a startup or an established company. However, after my experience in my first frontend role, I now have greater clarity with regards to what I expect from my next workplace. For example, I am decided that I will only work for an established company with a sizeable dev team, or at least one which has a senior frontend developer whom I can learn and benefit from. At this moment in my journey, it is not beneficial nor sensible for me to accept a job role where I am the sole frontend developer of a company -- the pressure is not something I am willing to shoulder the burden of nor is such a job role conducive to my growth as a developer.
 
