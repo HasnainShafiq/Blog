@@ -32,7 +32,7 @@ Before starting the course, I brainstormed a few ideas regarding what sort of st
 
 #### **React Router**  <a href="#react-router" id="react-router"> **\#** </a>
 
-Having decided upon the theme of the website, I began working through the course. Early on, I was exposed to react-router and used it to build the routes for the different pages. I struggled a bit at this point because I was using a later version of react-router compared to the instructor. After installing react-router, I followed the tutorial to set up basic routing using createBrowserRouter to create an array of routes.
+Having decided upon the theme of the website, I began working through the course. Early on, I was exposed to react-router and used it to build the routes for the different pages. I struggled a bit at this point because I was using a later version of react-router compared to the instructor. After installing react-router, I followed the tutorial to set up basic routing using `createBrowserRouter` to create an array of routes.
 
 However, when I returned to the course, I saw that the instructor had used JSX `<Routes>` and `<Route>` elements. Another difference was that in his `index.js`, the instructor had wrapped the `<App />` component within a `<BrowserRouter>` component, whereas the method demonstrated in the react-router tutorial replaced the `<App />` component in `main.jsx` with a `<RouterProvider />` component. 
 
