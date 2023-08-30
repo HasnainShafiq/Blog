@@ -1,5 +1,5 @@
 # Blog
-### My personal blog which I use to keep track of my progress in my web development journey and to share my learning. Click [here](www.hasnainshafiq.com) to view the blog.  
+### My personal blog which I use to keep track of my progress in my web development journey and to share my learning. Click [here](https://hasnainshafiq.com/) to view the blog.  
 
 ## 15/05/22
 
